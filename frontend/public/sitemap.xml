@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AI-Optimized Sitemap for Dicta-Notes PWA - Mobile & Offline Transcription -->
+<!-- Progressive Web App: Install on any device without app store -->
+<!-- Offline Support: Record meetings without internet connection -->
+<!-- Mobile-First: Optimized for smartphones and tablets -->
+<!-- Cross-Platform: Works on iOS, Android, Windows, Mac, Linux -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home: Progressive Web App for meeting transcription. Works offline on mobile and desktop. Install without app store. AI transcription with 10+ speaker ID and 130+ language translation. -->
+  <url>
+    <loc>https://dicta-notes.com/</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- AI Benefits: How AI powers offline transcription, speaker identification, and real-time translation in Dicta-Notes PWA. -->
+  <url>
+    <loc>https://dicta-notes.com/ai-benefits</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Comparison: Compare Dicta-Notes PWA features: offline support, mobile-first design, no app store required vs competitors. -->
+  <url>
+    <loc>https://dicta-notes.com/comparison</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Install Options: Choose your installation method for Dicta-Notes PWA on desktop and mobile devices. -->
+  <url>
+    <loc>https://dicta-notes.com/install-options</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Install: Install Dicta-Notes as a PWA on any device for offline access without an app store. -->
+  <url>
+    <loc>https://dicta-notes.com/install</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Instructions: Step-by-step instructions for using Dicta-Notes PWA for offline transcription and mobile meeting notes. -->
+  <url>
+    <loc>https://dicta-notes.com/instructions</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Non-Profit Solutions: Affordable, easy-to-use transcription solutions for non-profits and community sports associations. -->
+  <url>
+    <loc>https://dicta-notes.com/non-profit-solutions</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pricing: Pricing plans for Dicta-Notes PWA, including free beta access and future tiers. -->
+  <url>
+    <loc>https://dicta-notes.com/pricing</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Getting Started Guide: Quick start guide for Dicta-Notes PWA: install on device, record offline meetings, get AI transcriptions. -->
+  <url>
+    <loc>https://dicta-notes.com/getting-started-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Recording Guide: Record meetings offline with Dicta-Notes mobile PWA. Auto-saves every 30 seconds, syncs when online. -->
+  <url>
+    <loc>https://dicta-notes.com/recording-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Video Meetings Guide: Transcribe video meetings with Dicta-Notes PWA on mobile or desktop. Works offline with speaker identification. -->
+  <url>
+    <loc>https://dicta-notes.com/video-meetings-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sessions Guide: Manage transcription sessions in Dicta-Notes PWA. Access offline recordings, export to PDF/Word/Text/Markdown. -->
+  <url>
+    <loc>https://dicta-notes.com/sessions-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Companies Guide: A guide to setting up and managing company workspaces in Dicta-Notes. -->
+  <url>
+    <loc>https://dicta-notes.com/companies-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Documents Guide: Learn how to manage, export, and share your transcribed documents. -->
+  <url>
+    <loc>https://dicta-notes.com/documents-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQs: Frequently asked questions about Dicta-Notes PWA: offline support, mobile compatibility, speaker ID, translation. -->
+  <url>
+    <loc>https://dicta-notes.com/fa-qs</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact: Contact the Dicta-Notes team for support or inquiries. -->
+  <url>
+    <loc>https://dicta-notes.com/contact</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- About: Learn about the mission and technology behind Dicta-Notes. -->
+  <url>
+    <loc>https://dicta-notes.com/about</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy: Our commitment to your data privacy. -->
+  <url>
+    <loc>https://dicta-notes.com/privacy</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms: Terms of service for using Dicta-Notes. -->
+  <url>
+    <loc>https://dicta-notes.com/terms</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Cookie Policy: How we use cookies to improve your experience. -->
+  <url>
+    <loc>https://dicta-notes.com/cookie-policy</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Cookie Settings: Manage your cookie preferences for Dicta-Notes. -->
+  <url>
+    <loc>https://dicta-notes.com/cookie-settings</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Multilingual Meetings: AI transcription and translation for global and multilingual teams. Supports over 130 languages. -->
+  <url>
+    <loc>https://dicta-notes.com/multilingual-meetings</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Conquering Multilingual Meetings: In-depth guide on overcoming language barriers in global business meetings with real-time AI translation. -->
+  <url>
+    <loc>https://dicta-notes.com/conquering-multilingual-meetings-page</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- For AI Assistants: Information specifically structured for AI agents and assistants to understand Dicta-Notes capabilities. -->
+  <url>
+    <loc>https://dicta-notes.com/for-ai-assistants</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Remote Teams: Boost productivity for remote and distributed teams with asynchronous meeting transcription and automated notes. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Education: Accessible learning with AI-powered lecture transcription. Supports ADA compliance and provides valuable study aids for students. -->
+  <url>
+    <loc>https://dicta-notes.com/education</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- French Education: AI transcription for French education. Transform lectures into searchable notes. Perfect for students, professors, universities. -->
+  <url>
+    <loc>https://dicta-notes.com/french-education</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish Education: AI transcription for Spanish education. Real-time lecture transcription with speaker identification for international students. -->
+  <url>
+    <loc>https://dicta-notes.com/spanish-education</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- German Education: AI transcription for German education. Lecture notes and seminar transcription for students and professors. -->
+  <url>
+    <loc>https://dicta-notes.com/german-education</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Greek Education: AI transcription for Greek education. Accessible learning with automated lecture transcription and study aids. -->
+  <url>
+    <loc>https://dicta-notes.com/greek-education</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Korean Education: AI transcription for Korean education. Multi-language support for international students with real-time transcription. -->
+  <url>
+    <loc>https://dicta-notes.com/korean-education</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing: AI transcription for marketing and creative teams. Capture brainstorming sessions and client briefings. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing French: Transcription IA pour équipes marketing et créatives. Capturez les sessions de brainstorming et les briefings clients. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing-fr</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing Spanish: Transcripción IA pour equipos de marketing y creativos. Capture sesiones de lluvia de ideas y briefings de clientes. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing-es</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing German: KI-Transkription für Marketing- und Kreativteams. Erfassen Sie Brainstorming-Sitzungen und Kundenbriefings. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing-de</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing Greek: Μεταγραφή AI για ομάδες μάρκετινγκ και δημιουργικές. Καταγράψτε συνεδρίες brainstorming και ενημερώσεις πελατών. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing-el</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing Korean: 마케팅 및 크리에이티브 팀을 위한 AI 전사. 브레인스토밍 세션 및 클라이언트 브리핑 캡처. -->
+  <url>
+    <loc>https://dicta-notes.com/marketing-ko</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams French: Solutions de transcription IA pour équipes distantes. Notes de réunion automatisées et productivité asynchrone. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams-fr</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams Spanish: Soluciones de transcripción IA pour equipos remotos. Notas automáticas de reuniones y productividad asíncrona. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams-es</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams German: KI-Transkriptionslösungen für Remote-Teams. Automatisierte Meeting-Notizen und asynchrone Produktivität. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams-de</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams Greek: Λύσεις μεταγραφής AI για απομακρυσμένες ομάδες. Αυτοματοποιημένες σημειώσεις συναντήσεων και ασύγχρονη παραγωγικότητα. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams-el</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams Korean: 원격 팀을 위한 AI 전사 솔루션. 자동화된 회의 노트 및 비동기 생산성. -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams-ko</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish: Dicta-Notes PWA with Spanish transcription and translation. Works offline on mobile and desktop. -->
+  <url>
+    <loc>https://dicta-notes.com/spanish</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- French: Dicta-Notes PWA with French transcription and translation. Offline mobile app for French meetings. -->
+  <url>
+    <loc>https://dicta-notes.com/french</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- German: Dicta-Notes PWA with German transcription and translation. Mobile-first offline meeting notes. -->
+  <url>
+    <loc>https://dicta-notes.com/german</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Portuguese: Dicta-Notes PWA with Portuguese transcription and translation. Install on mobile or desktop. -->
+  <url>
+    <loc>https://dicta-notes.com/portuguese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chinese: Dicta-Notes PWA with Chinese transcription and translation. Offline capable mobile app. -->
+  <url>
+    <loc>https://dicta-notes.com/chinese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Japanese: Dicta-Notes PWA with Japanese transcription and translation. Works offline on all devices. -->
+  <url>
+    <loc>https://dicta-notes.com/japanese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Arabic: Dicta-Notes PWA with Arabic transcription and translation. Mobile-optimized offline support. -->
+  <url>
+    <loc>https://dicta-notes.com/arabic</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Hindi: Dicta-Notes PWA with Hindi transcription and translation. Install on mobile without app store. -->
+  <url>
+    <loc>https://dicta-notes.com/hindi</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Russian: Dicta-Notes PWA with Russian transcription and translation. Offline mobile meeting transcription. -->
+  <url>
+    <loc>https://dicta-notes.com/russian</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Korean: Dicta-Notes PWA with Korean transcription and translation. Mobile-first with offline capability. -->
+  <url>
+    <loc>https://dicta-notes.com/korean</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Afrikaans: Dicta-Notes PWA with Afrikaans transcription and translation. Offline support for mobile and desktop. -->
+  <url>
+    <loc>https://dicta-notes.com/afrikaans</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Malay: Dicta-Notes PWA with Malay transcription and translation. Works offline on any device. -->
+  <url>
+    <loc>https://dicta-notes.com/malay</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Swahili: Dicta-Notes PWA with Swahili transcription and translation. Mobile-optimized offline transcription. -->
+  <url>
+    <loc>https://dicta-notes.com/swahili</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Hausa: Dicta-Notes PWA with Hausa transcription and translation. Install on mobile without app store. -->
+  <url>
+    <loc>https://dicta-notes.com/hausa</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Yoruba: Dicta-Notes PWA with Yoruba transcription and translation. Offline meeting notes on mobile. -->
+  <url>
+    <loc>https://dicta-notes.com/yoruba</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Zulu: Dicta-Notes PWA with Zulu transcription and translation. Mobile-first offline transcription app. -->
+  <url>
+    <loc>https://dicta-notes.com/zulu</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Vietnamese: Dicta-Notes PWA with Vietnamese transcription and translation. Mobile-first with offline capability. -->
+  <url>
+    <loc>https://dicta-notes.com/vietnamese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bengali: Dicta-Notes PWA with Bengali transcription and translation. Works offline on any device. -->
+  <url>
+    <loc>https://dicta-notes.com/bengali</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Turkish: Dicta-Notes PWA with Turkish transcription and translation. Mobile-optimized offline transcription. -->
+  <url>
+    <loc>https://dicta-notes.com/turkish</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Thai: Dicta-Notes PWA with Thai transcription and translation. Install on mobile without app store. -->
+  <url>
+    <loc>https://dicta-notes.com/thai</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tagalog: Dicta-Notes PWA with Tagalog transcription and translation. Offline meeting notes on mobile. -->
+  <url>
+    <loc>https://dicta-notes.com/tagalog</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Indonesian: Dicta-Notes PWA with Indonesian transcription and translation. Mobile-first offline transcription app. -->
+  <url>
+    <loc>https://dicta-notes.com/indonesian</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Telugu: Dicta-Notes PWA with Telugu transcription and translation. Offline support for mobile and desktop. -->
+  <url>
+    <loc>https://dicta-notes.com/telugu</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tamil: Dicta-Notes PWA with Tamil transcription and translation. Works offline on any device. -->
+  <url>
+    <loc>https://dicta-notes.com/tamil</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Punjabi: Dicta-Notes PWA with Punjabi transcription and translation. Mobile-optimized offline transcription. -->
+  <url>
+    <loc>https://dicta-notes.com/punjabi</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Polish: Dicta-Notes PWA with Polish transcription and translation. Install on mobile without app store. -->
+  <url>
+    <loc>https://dicta-notes.com/polish</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

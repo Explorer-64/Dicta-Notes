@@ -1,0 +1,125 @@
+# Dicta-Notes PWA - Robots.txt
+# Last updated: 2025-12-06
+
+# ============================================
+# AI BOT ALLOWANCES (LLMO - Large Language Model Optimization)
+# Explicitly allow AI agents to crawl for discoverability
+# ============================================
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ============================================
+# GENERAL CRAWLER RULES
+# ============================================
+
+User-agent: *
+
+# Allow public marketing pages
+Allow: /$
+Allow: /about
+Allow: /ai-benefits
+Allow: /comparison
+Allow: /contact
+Allow: /fa-qs
+Allow: /features
+Allow: /install
+Allow: /install-options
+Allow: /pricing
+Allow: /privacy
+Allow: /terms
+
+# Allow Guides & Resources
+Allow: /companies-guide
+Allow: /conquering-multilingual-meetings-page
+Allow: /documents-guide
+Allow: /getting-started-guide
+Allow: /instructions
+Allow: /sessions-guide
+Allow: /recording-guide
+Allow: /video-meetings-guide
+Allow: /for-ai-assistants
+
+# Allow Vertical/Solution Pages
+Allow: /education
+Allow: /marketing
+Allow: /multilingual-meetings
+Allow: /non-profit-solutions
+Allow: /remote-teams
+
+# Allow Language Pages (Examples)
+Allow: /spanish
+Allow: /french
+Allow: /german
+Allow: /japanese
+Allow: /chinese
+# ... (All other language landing pages are allowed by default as they are not disallowed)
+
+# Allow AI discoverability files
+Allow: /llms.txt
+Allow: /sitemap.xml
+Allow: /ai-sitemap.xml
+
+# Block all workspace/admin/internal pages
+Disallow: /sessions
+Disallow: /session-detail
+Disallow: /transcribe
+Disallow: /transcription
+Disallow: /settings
+Disallow: /companies
+Disallow: /company-detail
+Disallow: /view-session-page
+Disallow: /live-share-meeting
+
+# Block Auth & Account
+Disallow: /login
+Disallow: /logout
+Disallow: /forgot-password
+Disallow: /accept-invitation
+Disallow: /update-password
+
+# Block Admin & Test Pages
+Disallow: /admin-*
+Disallow: /debug-mode
+Disallow: /*-test
+Disallow: /storage-cleanup
+Disallow: /memory-cleanup-test
+
+# Payment Flow
+Disallow: /payment-success
+Disallow: /payment-failed
+
+# Block API endpoints (except those explicitly allowed above)
+Disallow: /api/
+
+# ============================================
+# SITEMAPS & CRAWL SETTINGS
+# ============================================
+
+# Sitemap location
+Sitemap: https://dicta-notes.com/sitemap.xml
+Sitemap: https://dicta-notes.com/ai-sitemap.xml
+
+# Crawl rate (be nice to our server)
+Crawl-delay: 1

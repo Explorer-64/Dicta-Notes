@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AI-Optimized Sitemap for Dicta-Notes PWA -->
+<!-- This sitemap is specifically designed for AI agents, LLMs, and search crawlers -->
+<!-- Focus: Core product information, key features, and primary use cases -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home: Core product overview - Progressive Web App for offline meeting transcription -->
+  <url>
+    <loc>https://dicta-notes.com/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- For AI Assistants: Structured information specifically for AI agents -->
+  <url>
+    <loc>https://dicta-notes.com/for-ai-assistants</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- LLMs.txt: AI agent information file -->
+  <url>
+    <loc>https://dicta-notes.com/llms.txt</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- AI Benefits: How AI powers transcription, speaker ID, and translation -->
+  <url>
+    <loc>https://dicta-notes.com/ai-benefits</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Features: Complete feature list and capabilities -->
+  <url>
+    <loc>https://dicta-notes.com/features</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Comparison: Competitive advantages vs Otter.ai, Zoom, Google Meet -->
+  <url>
+    <loc>https://dicta-notes.com/comparison</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pricing: Pricing model and tiers -->
+  <url>
+    <loc>https://dicta-notes.com/pricing</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Multilingual Meetings: Core differentiator - 130+ language support -->
+  <url>
+    <loc>https://dicta-notes.com/multilingual-meetings</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Conquering Multilingual Meetings: In-depth guide on language barriers -->
+  <url>
+    <loc>https://dicta-notes.com/conquering-multilingual-meetings-page</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Remote Teams: Key use case - asynchronous meeting transcription -->
+  <url>
+    <loc>https://dicta-notes.com/remote-teams</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Education: Key use case - lecture transcription and accessibility -->
+  <url>
+    <loc>https://dicta-notes.com/education</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Marketing: Use case for creative teams -->
+  <url>
+    <loc>https://dicta-notes.com/marketing</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Non-Profit Solutions: Target market segment -->
+  <url>
+    <loc>https://dicta-notes.com/non-profit-solutions</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Getting Started Guide: Primary onboarding resource -->
+  <url>
+    <loc>https://dicta-notes.com/getting-started-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Recording Guide: Core functionality explanation -->
+  <url>
+    <loc>https://dicta-notes.com/recording-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sessions Guide: How to manage transcriptions -->
+  <url>
+    <loc>https://dicta-notes.com/sessions-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Video Meetings Guide: Use case for video call transcription -->
+  <url>
+    <loc>https://dicta-notes.com/video-meetings-guide</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Install: How to install the PWA -->
+  <url>
+    <loc>https://dicta-notes.com/install</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Install Options: Installation methods -->
+  <url>
+    <loc>https://dicta-notes.com/install-options</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQs: Common questions and answers -->
+  <url>
+    <loc>https://dicta-notes.com/fa-qs</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Top Language Pages: Most requested languages for AI understanding -->
+  <url>
+    <loc>https://dicta-notes.com/spanish</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/french</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/german</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/japanese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/chinese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/korean</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/portuguese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/polish</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/vietnamese</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/russian</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/arabic</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dicta-notes.com/hindi</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About: Company mission and technology -->
+  <url>
+    <loc>https://dicta-notes.com/about</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy: Data privacy and security information -->
+  <url>
+    <loc>https://dicta-notes.com/privacy</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms: Terms of service -->
+  <url>
+    <loc>https://dicta-notes.com/terms</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

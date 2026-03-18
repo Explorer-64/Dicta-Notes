@@ -1,0 +1,11 @@
+.gcloudignore
+.git
+.gitignore
+*.pyc
+__pycache__/
+venv/
+.venv/
+*.egg-info/
+.env
+.env.*
+!.env.example
