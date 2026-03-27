@@ -16,4 +16,8 @@ run-backend:
 run-frontend:
 	cd frontend && ./run.sh
 
+deploy:
+	chmod +x deploy.sh
+	./deploy.sh
+
 .DEFAULT_GOAL := install

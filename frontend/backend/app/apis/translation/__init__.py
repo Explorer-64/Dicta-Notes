@@ -250,26 +250,21 @@ def translate_text(
         source_lang_name = language_names.get(detected_source, detected_source)
         
         # Traditional method's transcription-first translation approach
-        prompt = f"""You are performing text translation using Traditional transcription methodology for maximum accuracy.
-        
-        CRITICAL: Apply Traditional method's transcription-first approach:
-        1. FIRST: Ensure perfect understanding of the source text in its original language
-        2. SECOND: Apply precise language detection consistent with Traditional transcription
-        3. THIRD: Provide accurate translation maintaining Traditional method's quality standards
-        
+        prompt = f"""You are a professional translator with deep knowledge of {target_lang_name} business and professional culture.
+
         SOURCE LANGUAGE: {source_lang_name} ({detected_source})
         TARGET LANGUAGE: {target_lang_name} ({request.target_language})
-        
+
         TRANSLATION INSTRUCTIONS:
-        - Maintain the EXACT meaning and context from the original text
-        - Preserve any formatting, proper names, and technical terms appropriately
-        - Use Traditional method's attention to detail for speaker context and nuance
-        - Ensure translation quality matches Traditional transcription standards
+        - Use terminology that is natural and idiomatic in {target_lang_name}, as a native speaker would use it in a professional business context
+        - Do NOT translate literally if a more natural or conventional equivalent exists in {target_lang_name}
+        - For business, financial, and professional terms, use the terminology actually used by {target_lang_name}-speaking professionals — not a word-for-word rendering of the English
+        - Preserve formatting, proper names, and brand names unchanged
         - If source is already {target_lang_name}, return the original text unchanged
-        
+
         Original text{source_lang_prompt}:
         {request.text}
-        
+
         Provide ONLY the translated text in {target_lang_name}, nothing else.
         """
         
