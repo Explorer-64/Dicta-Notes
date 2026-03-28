@@ -161,6 +161,7 @@ export const userRoutes: RouteObject[] = [
 	{ path: "/documents-guide", element: <DocumentsGuide />},
 	{ path: "/documentsguide", element: <DocumentsGuide />},
 	{ path: "/education", element: <Education />},
+	{ path: "/faq", element: <FAQs />},
 	{ path: "/fa-qs", element: <FAQs />},
 	{ path: "/faqs", element: <FAQs />},
 	{ path: "/features", element: <Features />},

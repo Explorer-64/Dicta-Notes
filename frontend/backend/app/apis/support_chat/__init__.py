@@ -80,7 +80,7 @@ async def detect_language(text: str) -> str:
         if not gemini_api_key:
             return "en"  # Default to English
             
-        model = get_gemini_client('gemini-2.0-flash-exp')
+        model = get_gemini_client('gemini-2.5-flash')
         prompt = f"""Identify the language of this text and return ONLY the ISO 639-1 language code (e.g., 'en', 'es', 'zh', 'fr').
 Don't include any explanations, just the code.
 
@@ -154,7 +154,7 @@ async def support_chat(request: SupportChatRequest, client_request: Request) -> 
         needs_escalation = should_escalate_to_support(request.message, request.chat_history)
         
         # Create Gemini model
-        model = get_gemini_client('gemini-2.0-flash-exp')
+        model = get_gemini_client('gemini-2.5-flash')
         
         # Build context-aware system prompt with language instruction
         system_prompt = f"""
@@ -173,7 +173,7 @@ Key features of Dicta-Notes:
 
 **ON-DEMAND TRANSCRIPTION:**
 - After recording, navigate to your session detail page to process the audio
-- Powered by Gemini 2.5 Pro for extremely accurate transcription in virtually all languages
+- Powered by Google Gemini 2.5 (Flash and Pro models) for extremely accurate transcription in virtually all languages
 - Automatic speaker identification and labeling
 - Edit speaker names after transcription is complete
 - View transcript, play audio, and take notes all in one place
@@ -224,13 +224,13 @@ Common issues and solutions:
 
 2. Transcription Quality:
    - Browser speech (live feedback) is for following along only
-   - Final transcription uses Gemini 2.5 Pro for high accuracy
+   - Final transcription uses Google Gemini 2.5 (Flash and Pro models) for high accuracy
    - Speak clearly and at moderate pace
    - Minimize background noise
    - Ensure good microphone quality
 
 3. Speaker Identification:
-   - Gemini 2.5 Pro automatically identifies speakers during on-demand transcription
+   - Google Gemini 2.5 automatically identifies speakers during on-demand transcription
    - Allow a few seconds between different speakers for better accuracy
    - Use "Edit Speakers" feature on session detail page to rename speakers after transcription
    - Speaker names can be updated anytime

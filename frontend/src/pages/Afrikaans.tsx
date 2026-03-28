@@ -23,7 +23,7 @@ export default function Afrikaans() {
       <Helmet>
         <html lang="af" />
         <title>Dicta-Notes | Regtydse KI-gedrewe Vergadertranskripsie</title>
-        <meta name="description" content="Dicta-Notes gebruik gevorderde KI om vergaderings in regte tyd te transkribeer met spreker-identifikasie. Ondersteun meer as 130 tale, transkribeer met Gemini 2.5 Pro, en voer uit in verskeie formate." />
+        <meta name="description" content="Dicta-Notes gebruik gevorderde KI om vergaderings in regte tyd te transkribeer met spreker-identifikasie. Ondersteun meer as 130 tale, transkribeer met Google Gemini 2.5, en voer uit in verskeie formate." />
         <link rel="canonical" href="https://dicta-notes.com/afrikaans" />
         <meta name="robots" content="index, follow" />
         
@@ -93,7 +93,7 @@ export default function Afrikaans() {
             KI-gedrewe Vergadertranskripsie
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes transkribeer jou vergaderings in regte tyd met behulp van Google Gemini 2.5 Pro se gevorderde kunsmatige intelligensie. Identifiseer outomaties tot 10+ verskillende sprekers en vertaal in meer as 130 tale.
+            Dicta-Notes transkribeer jou vergaderings in regte tyd met behulp van Google Gemini 2.5 se gevorderde kunsmatige intelligensie. Identifiseer outomaties tot 10+ verskillende sprekers en vertaal in meer as 130 tale.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

@@ -23,7 +23,7 @@ export default function Arabic() {
       <Helmet>
         <html lang="ar" dir="rtl" />
         <title>Dicta-Notes | تفريغ اجتماعات بالذكاء الاصطناعي في الوقت الفعلي</title>
-        <meta name="description" content="يستخدم Dicta-Notes الذكاء الاصطناعي المتقدم لتفريغ الاجتماعات في الوقت الفعلي مع تحديد المتحدثين. دعم لأكثر من 130 لغة، التفريغ باستخدام Gemini 2.5 Pro، والتصدير بصيغ متعددة." />
+        <meta name="description" content="يستخدم Dicta-Notes الذكاء الاصطناعي المتقدم لتفريغ الاجتماعات في الوقت الفعلي مع تحديد المتحدثين. دعم لأكثر من 130 لغة، التفريغ باستخدام Google Gemini 2.5، والتصدير بصيغ متعددة." />
         <link rel="canonical" href="https://dicta-notes.com/arabic" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Arabic() {
             تفريغ اجتماعات بالذكاء الاصطناعي
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            يقوم Dicta-Notes بتفريغ اجتماعاتك في الوقت الفعلي باستخدام الذكاء الاصطناعي المتقدم من Google Gemini 2.5 Pro. يحدد تلقائياً ما يصل إلى 10+ متحدثين مختلفين ويترجم إلى أكثر من 130 لغة.
+            يقوم Dicta-Notes بتفريغ اجتماعاتك في الوقت الفعلي باستخدام الذكاء الاصطناعي المتقدم من Google Gemini 2.5. يحدد تلقائياً ما يصل إلى 10+ متحدثين مختلفين ويترجم إلى أكثر من 130 لغة.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-right">

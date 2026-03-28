@@ -33,11 +33,12 @@ export default function InternalGuide() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">2. Gemini 2.5 Pro</h3>
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">2. Google Gemini 2.5</h3>
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   <li><Badge variant="secondary">Purpose:</Badge> Powerful AI transcription and processing</li>
                   <li><Badge variant="secondary">Strength:</Badge> Extremely powerful in virtually all languages</li>
                   <li><Badge variant="secondary">Use Cases:</Badge> On-demand transcription, speaker identification, language detection, meeting summaries</li>
+                  <li><Badge variant="secondary">Models:</Badge> Primary on-demand jobs use <strong>Gemini 2.5 Flash</strong>; <strong>Gemini 2.5 Pro</strong> appears in select API/worker paths (e.g. legacy or alternate transcription handlers).</li>
                 </ul>
               </div>
               <div>
@@ -142,7 +143,7 @@ export default function InternalGuide() {
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">5. On-Demand Transcription</h3>
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   <li><Badge variant="secondary">Trigger Processing:</Badge> Navigate to session detail page</li>
-                  <li><Badge variant="secondary">Gemini 2.5 Pro:</Badge> Transcribes saved audio with speaker identification</li>
+                  <li><Badge variant="secondary">Google Gemini 2.5:</Badge> Transcribes saved audio with speaker identification</li>
                   <li><Badge variant="secondary">View Results:</Badge> Transcript, audio playback, notes, documents</li>
                   <li><Badge variant="secondary">Translation:</Badge> Translate to any of 130+ languages</li>
                 </ul>
@@ -331,7 +332,7 @@ export default function InternalGuide() {
                   <li><Badge variant="secondary">Database:</Badge> Firebase Firestore</li>
                   <li><Badge variant="secondary">Authentication:</Badge> Firebase Auth</li>
                   <li><Badge variant="secondary">Transcription (UX):</Badge> Browser SpeechRecognition API</li>
-                  <li><Badge variant="secondary">Transcription (AI):</Badge> Gemini 2.5 Pro</li>
+                  <li><Badge variant="secondary">Transcription (AI):</Badge> Google Gemini 2.5</li>
                   <li><Badge variant="secondary">Translation:</Badge> Google Translation API</li>
                   <li><Badge variant="secondary">PWA:</Badge> Service workers + manifest</li>
                   <li><Badge variant="secondary">UI Components:</Badge> shadcn/ui + Tailwind CSS</li>

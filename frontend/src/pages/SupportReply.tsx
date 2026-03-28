@@ -93,7 +93,7 @@ export default function SupportReply() {
             <ul className="list-disc list-inside space-y-1 text-sm">
               <li>Write your reply in English below</li>
               <li>System automatically looks up recipient's language preference</li>
-              <li>Email is translated to their language using Gemini 2.0 Flash</li>
+              <li>Email is translated to their language using Gemini 2.5 Flash</li>
               <li>HTML formatting is preserved in translation</li>
               <li>Falls back to English if no preference found</li>
             </ul>

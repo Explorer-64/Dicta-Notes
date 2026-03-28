@@ -65,7 +65,7 @@ def get_user_language_preference(user_email: str) -> str:
 
 def translate_email_content(subject: str, html: str, target_language: str) -> dict:
     """
-    Translate email subject and HTML content using Gemini 2.5 Pro.
+    Translate email subject and HTML content using Google Gemini 2.5.
     
     Args:
         subject: Email subject line
@@ -119,7 +119,7 @@ SUBJECT: [translated subject]
 HTML: [translated html with preserved formatting]
 """
         
-        model = get_gemini_client('gemini-2.0-flash-exp')
+        model = get_gemini_client('gemini-2.5-flash')
         response = model.generate_content(prompt)
         
         # Parse the response

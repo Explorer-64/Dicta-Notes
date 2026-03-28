@@ -23,7 +23,7 @@ export default function Japanese() {
       <Helmet>
         <html lang="ja" />
         <title>Dicta-Notes | AIによるリアルタイム会議文字起こし</title>
-        <meta name="description" content="Dicta-Notesは、先進的なAIを使用して会議をリアルタイムで文字起こしし、話者を識別します。130以上の言語をサポート、Gemini 2.5 Proによる文字起こし、複数の形式でエクスポート可能。" />
+        <meta name="description" content="Dicta-Notesは、先進的なAIを使用して会議をリアルタイムで文字起こしし、話者を識別します。130以上の言語をサポート、Google Gemini 2.5による文字起こし、複数の形式でエクスポート可能。" />
         <link rel="canonical" href="https://dicta-notes.com/japanese" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Japanese() {
             AI会議文字起こし
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-NotesはGoogle Gemini 2.5 Proの先進的な人工知能を使用して、会議をリアルタイムで文字起こしします。最大10人以上の異なる話者を自動的に識別し、130以上の言語に翻訳します。
+            Dicta-NotesはGoogle Gemini 2.5の先進的な人工知能を使用して、会議をリアルタイムで文字起こしします。最大10人以上の異なる話者を自動的に識別し、130以上の言語に翻訳します。
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

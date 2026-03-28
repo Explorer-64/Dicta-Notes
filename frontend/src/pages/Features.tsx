@@ -55,7 +55,7 @@ export default function Features() {
         },
         {
           name: "AI-Powered Accuracy",
-          description: "Powered by Gemini 2.5 Pro for saved sessions, delivering up to 98% accuracy with proper punctuation and formatting.",
+          description: "Powered by Google Gemini 2.5 for saved sessions, delivering up to 98% accuracy with proper punctuation and formatting.",
           icon: MonitorSpeaker
         }
       ]
@@ -96,8 +96,8 @@ export default function Features() {
           icon: Globe
         },
         {
-          name: "Gemini 2.5 Pro Processing",
-          description: "Advanced AI processing for saved sessions provides superior accuracy, better speaker identification, and intelligent formatting.",
+          name: "Gemini 2.5 AI (saved sessions)",
+          description: "Google Gemini 2.5 models process saved audio for strong accuracy, speaker identification, and intelligent formatting.",
           icon: Zap
         },
         {

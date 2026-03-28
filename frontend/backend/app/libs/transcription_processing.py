@@ -317,7 +317,7 @@ IMPORTANT: Return only valid JSON, no extra text or markdown formatting.
         
         # Get the raw transcription result from Gemini
         transcription_result = response.text
-        logger.info("Successfully processed audio with Gemini 2.0")
+        logger.info("Successfully processed audio with Gemini 2.5 Pro")
         logger.debug("Raw Gemini response:")
         logger.debug(transcription_result)
 

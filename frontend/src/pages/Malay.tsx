@@ -23,7 +23,7 @@ export default function Malay() {
       <Helmet>
         <html lang="ms" />
         <title>Dicta-Notes | Transkripsi Mesyuarat Masa Nyata dengan AI</title>
-        <meta name="description" content="Dicta-Notes menggunakan AI termaju untuk mentranskrip mesyuarat secara masa nyata dengan pengenalan penceramah. Menyokong lebih 130 bahasa, transkripsi dengan Gemini 2.5 Pro, dan eksport dalam pelbagai format." />
+        <meta name="description" content="Dicta-Notes menggunakan AI termaju untuk mentranskrip mesyuarat secara masa nyata dengan pengenalan penceramah. Menyokong lebih 130 bahasa, transkripsi dengan Google Gemini 2.5, dan eksport dalam pelbagai format." />
         <link rel="canonical" href="https://dicta-notes.com/malay" />
         <meta name="robots" content="index, follow" />
         
@@ -93,7 +93,7 @@ export default function Malay() {
             Transkripsi Mesyuarat dengan AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes mentranskrip mesyuarat anda secara masa nyata menggunakan kecerdasan buatan termaju Google Gemini 2.5 Pro. Mengenal pasti sehingga 10+ penceramah berbeza secara automatik dan menterjemah ke lebih 130 bahasa.
+            Dicta-Notes mentranskrip mesyuarat anda secara masa nyata menggunakan kecerdasan buatan termaju Google Gemini 2.5. Mengenal pasti sehingga 10+ penceramah berbeza secara automatik dan menterjemah ke lebih 130 bahasa.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

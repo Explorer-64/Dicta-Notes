@@ -90,7 +90,7 @@ export default function Vietnamese() {
             Ghi Chú Cuộc Họp Bằng AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes phiên âm cuộc họp của bạn theo thời gian thực bằng Google Gemini 2.5 Pro AI tiên tiến. Tự động nhận dạng tới 10+ người nói khác nhau và dịch sang hơn 130 ngôn ngữ.
+            Dicta-Notes phiên âm cuộc họp của bạn theo thời gian thực bằng Google Gemini 2.5 tiên tiến. Tự động nhận dạng tới 10+ người nói khác nhau và dịch sang hơn 130 ngôn ngữ.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

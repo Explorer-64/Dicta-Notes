@@ -93,7 +93,7 @@ export default function Turkish() {
             AI ile Toplantı Transkripti
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes toplantılarınızı gelişmiş Google Gemini 2.5 Pro AI kullanarak gerçek zamanlı olarak deşifre eder. Otomatik olarak 10+ farklı konuşmacıyı tanır ve 130+ dile çevirir.
+            Dicta-Notes toplantılarınızı gelişmiş Google Gemini 2.5 kullanarak gerçek zamanlı olarak deşifre eder. Otomatik olarak 10+ farklı konuşmacıyı tanır ve 130+ dile çevirir.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

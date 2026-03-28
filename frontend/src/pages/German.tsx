@@ -23,7 +23,7 @@ export default function German() {
       <Helmet>
         <html lang="de" />
         <title>Dicta-Notes | KI-gestützte Echtzeit-Besprechungstranskription</title>
-        <meta name="description" content="Dicta-Notes nutzt fortschrittliche KI zur Echtzeit-Transkription von Besprechungen mit Sprechererkennung. Unterstützung für über 130 Sprachen, Transkription mit Gemini 2.5 Pro und Export in mehreren Formaten." />
+        <meta name="description" content="Dicta-Notes nutzt fortschrittliche KI zur Echtzeit-Transkription von Besprechungen mit Sprechererkennung. Unterstützung für über 130 Sprachen, Transkription mit Google Gemini 2.5 und Export in mehreren Formaten." />
         <link rel="canonical" href="https://dicta-notes.com/german" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function German() {
             KI-Besprechungstranskription
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes transkribiert Ihre Besprechungen in Echtzeit mit fortschrittlicher künstlicher Intelligenz von Google Gemini 2.5 Pro. Erkennt automatisch bis zu 10+ verschiedene Sprecher und übersetzt in über 130 Sprachen.
+            Dicta-Notes transkribiert Ihre Besprechungen in Echtzeit mit fortschrittlicher künstlicher Intelligenz von Google Gemini 2.5. Erkennt automatisch bis zu 10+ verschiedene Sprecher und übersetzt in über 130 Sprachen.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

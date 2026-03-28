@@ -1,5 +1,5 @@
 # Dicta-Notes PWA - Robots.txt
-# Last updated: 2025-12-06
+# Last updated: 2026-03-27
 
 # ============================================
 # AI BOT ALLOWANCES (LLMO - Large Language Model Optimization)
@@ -41,6 +41,7 @@ Allow: /$
 Allow: /about
 Allow: /ai-benefits
 Allow: /comparison
+Allow: /features
 Allow: /contact
 Allow: /fa-qs
 Allow: /features
@@ -110,7 +111,7 @@ Disallow: /memory-cleanup-test
 Disallow: /payment-success
 Disallow: /payment-failed
 
-# Block API endpoints (except those explicitly allowed above)
+# Block same-origin API paths if present (app backend is on Cloud Run, not under this host)
 Disallow: /api/
 
 # ============================================
@@ -121,5 +122,5 @@ Disallow: /api/
 Sitemap: https://dicta-notes.com/sitemap.xml
 Sitemap: https://dicta-notes.com/ai-sitemap.xml
 
-# Crawl rate (be nice to our server)
+# Crawl-delay is not honored by Googlebot; retained for bots that support it.
 Crawl-delay: 1

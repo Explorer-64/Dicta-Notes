@@ -93,7 +93,7 @@ export default function Tamil() {
             AIஇன் மூலம் கூட்ட படியெடுத்தல்
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes உங்கள் கூட்டங்களை மேம்பட்ட Google Gemini 2.5 Pro AI பயன்படுத்தி நேரடியாக படியெடுக்கிறது. தானாகவே 10+ வெவ்வேறு பேச்சாளர்களை அடையாளம் கண்டு 130+ மொழிகளுக்கு மொழிபெயர்க்கிறது.
+            Dicta-Notes உங்கள் கூட்டங்களை மேம்பட்ட Google Gemini 2.5 பயன்படுத்தி நேரடியாக படியெடுக்கிறது. தானாகவே 10+ வெவ்வேறு பேச்சாளர்களை அடையாளம் கண்டு 130+ மொழிகளுக்கு மொழிபெயர்க்கிறது.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

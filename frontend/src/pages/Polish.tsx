@@ -93,7 +93,7 @@ export default function Polish() {
             Transkrypcja Spotkań z AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes transkrybuje Twoje spotkania w czasie rzeczywistym przy użyciu zaawansowanej sztucznej inteligencji Google Gemini 2.5 Pro. Automatycznie rozpoznaje do 10+ różnych mówców i tłumaczy na 130+ języków.
+            Dicta-Notes transkrybuje Twoje spotkania w czasie rzeczywistym przy użyciu zaawansowanej sztucznej inteligencji Google Gemini 2.5. Automatycznie rozpoznaje do 10+ różnych mówców i tłumaczy na 130+ języków.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

@@ -3,7 +3,7 @@ import { useState, useCallback } from 'react';
 /**
  * Hook to coordinate dual recording systems:
  * - Traditional LiveTranscription (microphone-based)
- * - GeminiLivePanel (Gemini 2.0 Flash Live API)
+ * - GeminiLivePanel (Gemini 2.5 Flash Live API)
  */
 export function useDualRecordingCoordinator() {
   const [isTraditionalRecording, setIsTraditionalRecording] = useState(false);

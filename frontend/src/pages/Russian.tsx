@@ -23,7 +23,7 @@ export default function Russian() {
       <Helmet>
         <html lang="ru" />
         <title>Dicta-Notes | Транскрипция встреч с ИИ в реальном времени</title>
-        <meta name="description" content="Dicta-Notes использует передовой ИИ для транскрипции встреч в реальном времени с идентификацией говорящих. Поддержка более 130 языков, транскрипция с Gemini 2.5 Pro и экспорт в несколько форматов." />
+        <meta name="description" content="Dicta-Notes использует передовой ИИ для транскрипции встреч в реальном времени с идентификацией говорящих. Поддержка более 130 языков, транскрипция с Google Gemini 2.5 и экспорт в несколько форматов." />
         <link rel="canonical" href="https://dicta-notes.com/russian" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Russian() {
             Транскрипция встреч с ИИ
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes транскрибирует ваши встречи в реальном времени, используя передовой искусственный интеллект Google Gemini 2.5 Pro. Автоматически определяет до 10+ различных говорящих и переводит на более чем 130 языков.
+            Dicta-Notes транскрибирует ваши встречи в реальном времени, используя передовой искусственный интеллект Google Gemini 2.5. Автоматически определяет до 10+ различных говорящих и переводит на более чем 130 языков.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

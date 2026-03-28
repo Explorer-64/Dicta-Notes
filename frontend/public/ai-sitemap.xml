@@ -23,7 +23,7 @@
   <!-- LLMs.txt: AI agent information file -->
   <url>
     <loc>https://dicta-notes.com/llms.txt</loc>
-    <lastmod>2025-12-28</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,7 +39,7 @@
   <!-- Features: Complete feature list and capabilities -->
   <url>
     <loc>https://dicta-notes.com/features</loc>
-    <lastmod>2024-10-01</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

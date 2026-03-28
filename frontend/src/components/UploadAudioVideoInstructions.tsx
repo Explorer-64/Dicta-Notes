@@ -53,7 +53,7 @@ export const UploadAudioVideoInstructions: React.FC<Props> = () => {
               <li>Click <span className="font-medium text-green-700">Save to Sessions</span> to upload. You’ll see an upload progress indicator.</li>
               <li>If you uploaded a video, the app will automatically extract audio before saving.</li>
               <li>After upload completes, you’ll be taken to the new Session Detail page.</li>
-              <li>From the Session Detail page, click <strong>Process</strong> to run AI transcription (Gemini 2.5 Pro) when ready.</li>
+              <li>From the Session Detail page, click <strong>Process</strong> to run AI transcription (Google Gemini 2.5) when ready.</li>
             </ol>
           </div>
 

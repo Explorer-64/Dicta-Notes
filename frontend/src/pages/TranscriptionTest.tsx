@@ -306,7 +306,7 @@ export default function TranscriptionTest() {
         <CardHeader>
           <CardTitle>🎤 Real-Time Meeting Transcription</CardTitle>
           <p className="text-sm text-muted-foreground">
-            Automatic transcription with AudioSourceManager + VAD + Gemini 2.0. Segments processed in parallel!
+            Automatic transcription with AudioSourceManager + VAD + Gemini 2.5. Segments processed in parallel!
           </p>
         </CardHeader>
         <CardContent className="space-y-4">

@@ -210,7 +210,7 @@ export function useGeminiLiveV2() {
           // Step 5: Send setup message to Gemini with promp
           const setupMessage = {
             setup: {
-              model: "models/gemini-2.0-flash-exp",
+              model: "models/gemini-2.5-flash-native-audio-preview-12-2025",
               generation_config: {
                 response_modalities: ["TEXT"],
               },

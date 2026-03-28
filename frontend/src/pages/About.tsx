@@ -15,7 +15,7 @@ export default function About() {
   }, []);
 
   const features = [
-    "AI-powered transcription with Gemini 2.5 Pro on saved sessions.",
+    "AI-powered transcription with Google Gemini 2.5 on saved sessions.",
     "Identify over 10 speakers with high accuracy.",
     "Translate transcripts into more than 130 languages.",
     "Export your notes to PDF, Word, Text, or Markdown.",
@@ -79,7 +79,7 @@ export default function About() {
                   <div>
                     <h4 className="font-semibold text-lg">2. AI-Powered Accuracy (Processing Layer)</h4>
                     <p className="text-muted-foreground text-sm">
-                      Once your meeting is saved, we process the full audio recording with Gemini 2.5 Pro. This provides a highly accurate transcript, identifies who said what, and allows for translation into 130+ languages.
+                      Once your meeting is saved, we process the full audio recording with Google Gemini 2.5. This provides a highly accurate transcript, identifies who said what, and allows for translation into 130+ languages.
                     </p>
                   </div>
                 </div>

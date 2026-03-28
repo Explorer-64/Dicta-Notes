@@ -28,7 +28,7 @@ class _ModelAdapter:
         )
 
 
-def get_gemini_client(model_name: str = "gemini-2.0-flash") -> _ModelAdapter:
+def get_gemini_client(model_name: str = "gemini-2.5-flash") -> _ModelAdapter:
     """Get configured Gemini client"""
     api_key = get_secret("GEMINI_API_KEY")
     logger.debug("GEMINI_API_KEY found: %s", api_key is not None)

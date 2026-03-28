@@ -23,7 +23,7 @@ export default function Yoruba() {
       <Helmet>
         <html lang="yo" />
         <title>Dicta-Notes | Ìkọ̀wé Ìpàdé Lásìkò-gangan pẹ̀lú AI</title>
-        <meta name="description" content="Dicta-Notes nlo AI to ga julọ lati kọ awọn ipade ni akoko gangan pẹlu idanimọ awọn agbọrọsọ. O ṣe atilẹyin awọn ede to ju 130 lọ, kikọ pẹlu Gemini 2.5 Pro, ati gbigbe jade ni awọn ọna oriṣiriṣi." />
+        <meta name="description" content="Dicta-Notes nlo AI to ga julọ lati kọ awọn ipade ni akoko gangan pẹlu idanimọ awọn agbọrọsọ. O ṣe atilẹyin awọn ede to ju 130 lọ, kikọ pẹlu Google Gemini 2.5, ati gbigbe jade ni awọn ọna oriṣiriṣi." />
         <link rel="canonical" href="https://dicta-notes.com/yo" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Yoruba() {
             Ìkọ̀wé Ìpàdé pẹ̀lú AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes ń kọ àwọn ìpàdé rẹ lásìkò-gangan nípa lílọ ọgbọ́n oríkàn tó ga jùlọ ti Google Gemini 2.5 Pro. Ó ń mọ̀ títí dé àwọn agbọ̀rọ̀sọ 10+ tó yàtọ̀ láìsí ìrànlọ́wọ́ àti tumọ̀ sí èdè tó ju 130 lọ.
+            Dicta-Notes ń kọ àwọn ìpàdé rẹ lásìkò-gangan nípa lílọ ọgbọ́n oríkàn tó ga jùlọ ti Google Gemini 2.5. Ó ń mọ̀ títí dé àwọn agbọ̀rọ̀sọ 10+ tó yàtọ̀ láìsí ìrànlọ́wọ́ àti tumọ̀ sí èdè tó ju 130 lọ.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

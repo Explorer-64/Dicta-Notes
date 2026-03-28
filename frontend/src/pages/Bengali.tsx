@@ -93,7 +93,7 @@ export default function Bengali() {
             AI দিয়ে মিটিং ট্রান্সক্রিপশন
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes আপনার মিটিং গুলি উন্নত Google Gemini 2.5 Pro AI ব্যবহার করে রিয়েল-টাইমে ট্রান্সক্রাইব করে। স্বয়ংক্রিয়ভাবে ১০+ বিভিন্ন স্পিকার সনাক্ত করে এবং ১৩০+ ভাষায় অনুবাদ করে।
+            Dicta-Notes আপনার মিটিং গুলি উন্নত Google Gemini 2.5 ব্যবহার করে রিয়েল-টাইমে ট্রান্সক্রাইব করে। স্বয়ংক্রিয়ভাবে ১০+ বিভিন্ন স্পিকার সনাক্ত করে এবং ১৩০+ ভাষায় অনুবাদ করে।
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

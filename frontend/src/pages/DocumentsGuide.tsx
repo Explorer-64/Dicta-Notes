@@ -14,6 +14,7 @@ export default function DocumentsGuide() {
     <>
       <Helmet>
         <title>Document Analysis Guide - Dicta-Notes</title>
+        <meta name="robots" content="noindex" />
         <meta name="description" content="Learn how to upload and analyze documents with AI in Dicta-Notes." />
       </Helmet>
       

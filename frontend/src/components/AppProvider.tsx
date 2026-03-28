@@ -24,6 +24,16 @@ import { initializeErrorTracking } from "../utils/adminDiagnostics";
 // Import early PWA initialization
 import "../utils/pwa-global-init";
 
+function prerenderActive(): boolean {
+	return (
+		typeof window !== "undefined" &&
+		Boolean(
+			(window as unknown as { __PRERENDER_INJECTED?: { prerender?: boolean } })
+				.__PRERENDER_INJECTED?.prerender,
+		)
+	);
+}
+
 interface Props {
   children: ReactNode;
 }
@@ -168,9 +178,19 @@ export const AppProvider = ({ children }: Props) => {
       });
     };
   }, [mountId]);
+
+  const isPrerender = prerenderActive();
+
+  useEffect(() => {
+    if (!isPrerender) return;
+    const t = window.setTimeout(() => {
+      document.dispatchEvent(new Event("prerender-ready"));
+    }, 150);
+    return () => clearTimeout(t);
+  }, [isPrerender]);
   
   // If Firebase auth is still initializing, show a loading screen
-  if (loading) {
+  if (loading && !isPrerender) {
     return <LoadingScreen />;
   }
 

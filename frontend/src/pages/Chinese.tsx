@@ -23,7 +23,7 @@ export default function Chinese() {
       <Helmet>
         <html lang="zh" />
         <title>Dicta-Notes | AI实时会议转录</title>
-        <meta name="description" content="Dicta-Notes使用先进的AI技术实时转录会议并识别说话者。支持130多种语言,采用Gemini 2.5 Pro转录,并可导出多种格式。" />
+        <meta name="description" content="Dicta-Notes使用先进的AI技术实时转录会议并识别说话者。支持130多种语言,采用Google Gemini 2.5转录,并可导出多种格式。" />
         <link rel="canonical" href="https://dicta-notes.com/chinese" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Chinese() {
             AI会议转录
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes使用Google Gemini 2.5 Pro的先进人工智能技术实时转录您的会议。自动识别多达10+位不同的发言者,并翻译成130多种语言。
+            Dicta-Notes使用Google Gemini 2.5的先进人工智能技术实时转录您的会议。自动识别多达10+位不同的发言者,并翻译成130多种语言。
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

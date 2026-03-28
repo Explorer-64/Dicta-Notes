@@ -23,7 +23,7 @@ export default function Zulu() {
       <Helmet>
         <html lang="zu" />
         <title>Dicta-Notes | Ukubhala Imihlangano Ngesikhathi Esigcwele nge-AI</title>
-        <meta name="description" content="I-Dicta-Notes isebenzisa i-AI ephezulu ukubhala imihlangano ngesikhathi esigcwele nokuhlonza abasebenzi. Isekela izilimi ezingaphezu kuka-130, ibhala nge-Gemini 2.5 Pro, futhi ikhiphe ngezindlela ezahlukene." />
+        <meta name="description" content="I-Dicta-Notes isebenzisa i-AI ephezulu ukubhala imihlangano ngesikhathi esigcwele nokuhlonza abasebenzi. Isekela izilimi ezingaphezu kuka-130, ibhala nge-Google Gemini 2.5, futhi ikhiphe ngezindlela ezahlukene." />
         <link rel="canonical" href="https://dicta-notes.com/zu" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Zulu() {
             Ukubhala Imihlangano nge-AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            I-Dicta-Notes ibhala imihlangano yakho ngesikhathi esigcwele isebenzisa ubuhlakani bokwenziwa obuphezulu be-Google Gemini 2.5 Pro. Ihlonza ngokuzenzakalelayo abasebenzi abalinganiselwa ku-10+ abahlukene futhi ihumusha ngezilimi ezingaphezu kuka-130.
+            I-Dicta-Notes ibhala imihlangano yakho ngesikhathi esigcwele isebenzisa ubuhlakani bokwenziwa obuphezulu be-Google Gemini 2.5. Ihlonza ngokuzenzakalelayo abasebenzi abalinganiselwa ku-10+ abahlukene futhi ihumusha ngezilimi ezingaphezu kuka-130.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

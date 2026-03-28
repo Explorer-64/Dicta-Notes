@@ -117,11 +117,11 @@ export default function App() {
         />
         <div className="container relative z-10 mx-auto px-4 text-center">
           <h1 id="hero-heading" className="text-3xl sm:text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl mb-4 sm:mb-6" itemProp="headline">
-            <span className="block">AI Notes That Go Anywhere</span>
-            <span className="block text-primary">In Any Language with Speaker ID</span>
+            <span className="block">Transcribe Any Meeting.</span>
+            <span className="block text-primary">In Any Language.</span>
           </h1>
           <div className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground" itemProp="description">
-           Record meetings on any device, even offline. Our app automatically detects the spoken language and delivers an AI-powered transcript, ready to translate into 130+ languages.
+            AI-powered transcription with automatic speaker identification. Works offline on any device. Translate into 130+ languages instantly.
           </div>
           <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
             <Button 
@@ -198,7 +198,7 @@ export default function App() {
                 <Bot className="h-6 w-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">On-Demand Transcription</h3>
-              <p className="text-muted-foreground">Process your recordings with Gemini 2.5 Pro for highly accurate transcription and speaker identification.</p>
+              <p className="text-muted-foreground">Process your recordings with Google Gemini 2.5 for highly accurate transcription and speaker identification.</p>
             </div>
             <div className="bg-card rounded-lg p-6 shadow-sm flex flex-col items-center text-center">
               <div className="h-12 w-12 flex items-center justify-center rounded-full bg-primary/10 mb-4">
@@ -237,10 +237,13 @@ export default function App() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Smartphone className="h-6 w-6 text-primary" />
-            <h2 id="pwa-install-heading" className="text-2xl sm:text-3xl font-bold">Install Dicta-Notes on Your Device</h2>
+            <h2 id="pwa-install-heading" className="text-2xl sm:text-3xl font-bold">Install it like an app. No app store required.</h2>
           </div>
-          <p className="mx-auto max-w-2xl text-base text-muted-foreground mb-8">
-            Dicta-Notes works offline! Install it on your device for faster access and use without an internet connection. No app store required.
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground mb-2">
+            Install Dicta-Notes directly from your browser in seconds — on any phone, tablet, or desktop.
+          </p>
+          <p className="mx-auto max-w-2xl text-sm text-muted-foreground mb-8">
+            📵 <strong>Records offline</strong> — no signal needed to capture audio. &nbsp;☁️ <strong>Transcribes when connected</strong> — AI processing happens once you're back online.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8 max-w-4xl mx-auto">
             <div className="flex items-center p-5 bg-card rounded-lg shadow-sm border gap-3 flex-1 min-w-[220px] max-w-[280px]">

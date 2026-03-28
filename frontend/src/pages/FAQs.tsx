@@ -11,7 +11,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { SchemaMarkup } from "components/SchemaMarkup";
 
 export default function FAQs() {
   const navigate = useNavigate();
@@ -37,7 +36,7 @@ export default function FAQs() {
   const faqItems = [
     {
       question: "How does Dicta-Notes identify different speakers?",
-      answer: "Dicta-Notes uses Gemini 2.5 Pro to analyze your recorded session and automatically differentiate and label 10+ speakers. After transcription, you can quickly rename speaker labels for perfect accuracy across the entire transcript."
+      answer: "Dicta-Notes uses Google Gemini 2.5 to analyze your recorded session and automatically differentiate and label 10+ speakers. After transcription, you can quickly rename speaker labels for perfect accuracy across the entire transcript."
     },
     {
       question: "Can I use Dicta-Notes for meetings in multiple languages?",
@@ -73,9 +72,22 @@ export default function FAQs() {
     },
     {
       question: "How does the app translate into my language?",
-      answer: "Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.0 Flash to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed."
+      answer: "Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.5 Flash and Google Cloud Translation to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed."
     }
   ];
+
+  const faqPageLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <>
@@ -85,11 +97,9 @@ export default function FAQs() {
         <meta property="og:title" content="Frequently Asked Questions - Dicta-Notes" />
         <meta property="og:description" content="Answers about AI transcription, 10+ speakers, 130+ languages, exports, PWA and security." />
         <meta name="twitter:card" content="summary" />
-        <link rel="canonical" href="https://dicta-notes.com/fa-qs" />
+        <link rel="canonical" href="https://dicta-notes.com/faq" />
+        <script type="application/ld+json">{JSON.stringify(faqPageLd)}</script>
       </Helmet>
-      
-      {/* FAQ Page Schema for Rich Results */}
-      <SchemaMarkup type="FAQPage" faqItems={faqItems} />
       
       <div className="flex flex-col min-h-screen bg-gray-50/50">
         <Header />
@@ -118,7 +128,7 @@ export default function FAQs() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="text-lg font-medium">How does Dicta-Notes identify different speakers?</AccordionTrigger>
                   <AccordionContent className="text-base text-gray-700 leading-relaxed">
-                    Dicta-Notes uses Gemini 2.5 Pro to analyze your recorded session and automatically differentiate and label 10+ speakers. After transcription, you can quickly rename speaker labels for perfect accuracy across the entire transcript.
+                    Dicta-Notes uses Google Gemini 2.5 to analyze your recorded session and automatically differentiate and label 10+ speakers. After transcription, you can quickly rename speaker labels for perfect accuracy across the entire transcript.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -181,7 +191,7 @@ export default function FAQs() {
                 <AccordionItem value="item-10">
                   <AccordionTrigger className="text-lg font-medium">How does the app translate into my language?</AccordionTrigger>
                   <AccordionContent className="text-base text-gray-700 leading-relaxed">
-                    Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.0 Flash to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed.
+                    Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.5 Flash and Google Cloud Translation to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

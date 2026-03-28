@@ -93,7 +93,7 @@ export default function Thai() {
             ถอดเสียงการประชุมด้วย AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes ถอดเสียงการประชุมของคุณแบบเรียลไทม์ด้วย Google Gemini 2.5 Pro AI ขั้นสูง จดจำผู้พูดได้มากถึง 10+ คนโดยอัตโนมัติและแปลได้กว่า 130 ภาษา
+            Dicta-Notes ถอดเสียงการประชุมของคุณแบบเรียลไทม์ด้วย Google Gemini 2.5 ขั้นสูง จดจำผู้พูดได้มากถึง 10+ คนโดยอัตโนมัติและแปลได้กว่า 130 ภาษา
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

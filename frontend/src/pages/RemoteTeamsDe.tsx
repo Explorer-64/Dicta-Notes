@@ -21,7 +21,7 @@ const featureHighlights = [
   {
     icon: <Archive className="h-8 w-8 text-yellow-500" />,
     title: "Automatisierte Meeting-Notizen",
-    description: "Erhalten Sie detaillierte, sprecheridentifizierte Notizen von Gemini 2.5 Pro. Konzentrieren Sie sich auf das Gespräch, nicht auf das Notieren.",
+    description: "Erhalten Sie detaillierte, sprecheridentifizierte Notizen von Google Gemini 2.5. Konzentrieren Sie sich auf das Gespräch, nicht auf das Notieren.",
   },
 ];
 
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "Was ist der Unterschied zwischen Browser-Sprache und der finalen Transkription?",
-    answer: "Der Live-Text, den Sie während der Aufnahme sehen, dient der sofortigen UX-Rückmeldung. Die finale, hochpräzise Transkription wird von Gemini 2.5 Pro aus dem gespeicherten Audio für maximale Qualität und Zuverlässigkeit verarbeitet."
+    answer: "Der Live-Text, den Sie während der Aufnahme sehen, dient der sofortigen UX-Rückmeldung. Die finale, hochpräzise Transkription wird von Google Gemini 2.5 aus dem gespeicherten Audio für maximale Qualität und Zuverlässigkeit verarbeitet."
   },
   {
     question: "Ist dies für vertrauliche interne Diskussionen geeignet?",

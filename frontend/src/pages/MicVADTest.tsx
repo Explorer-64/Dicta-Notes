@@ -213,7 +213,7 @@ const MicVADTest = () => {
             🎤 MicVAD-Only Test Harness
           </CardTitle>
           <p className="text-sm text-muted-foreground">
-            Isolated @ricky0123/vad-web testing with NO CustomVAD fallback. Pure MicVAD → Gemini 2.0 pipeline.
+            Isolated @ricky0123/vad-web testing with NO CustomVAD fallback. Pure MicVAD → Gemini 2.5 pipeline.
           </p>
           <div className="text-xs bg-blue-50 border border-blue-200 rounded p-2">
             <strong>Test Isolation:</strong> This page uses MicVADEngineOnly component that imports ONLY @ricky0123/vad-web and AudioSourceManager. 

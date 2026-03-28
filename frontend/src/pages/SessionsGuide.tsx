@@ -14,7 +14,7 @@ export default function SessionsGuide() {
     <>
       <Helmet>
         <title>Session Management Guide - Dicta-Notes</title>
-        <meta name="description" content="Learn how to view, filter, and manage your meeting sessions, process on-demand transcription with Gemini 2.5 Pro, translate in 130+ languages, and export to PDF, Word, Text, or Markdown." />
+        <meta name="description" content="Learn how to view, filter, and manage your meeting sessions, process on-demand transcription with Google Gemini 2.5, translate in 130+ languages, and export to PDF, Word, Text, or Markdown." />
         <link rel="canonical" href="https://dicta-notes.com/sessions-guide" />
         
         {/* Open Graph */}
@@ -26,7 +26,7 @@ export default function SessionsGuide() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Session Management Guide - Dicta-Notes" />
-        <meta name="twitter:description" content="Manage your meeting sessions: Gemini 2.5 Pro transcription, 10+ speakers, translation, and export options." />
+        <meta name="twitter:description" content="Manage your meeting sessions: Google Gemini 2.5 transcription, 10+ speakers, translation, and export options." />
       </Helmet>
       
       {/* Article Schema for SEO */}
@@ -34,7 +34,7 @@ export default function SessionsGuide() {
         type="Article"
         data={{
           headline: "Session Management Guide",
-          description: "Learn how to view, filter, and manage your meeting sessions, process on-demand transcription with Gemini 2.5 Pro, translate, and export.",
+          description: "Learn how to view, filter, and manage your meeting sessions, process on-demand transcription with Google Gemini 2.5, translate, and export.",
           author: {
             '@type': 'Organization',
             name: 'Dicta-Notes'
@@ -74,7 +74,7 @@ export default function SessionsGuide() {
                 <ul className="list-disc pl-5 space-y-2">
                   <li>All saved recordings appear on the Sessions page. Open it from the top navigation or go to <strong>/sessions</strong>.</li>
                   <li>Each card shows the title, created date, duration, speakers count, and optional client, project, purpose, and tags.</li>
-                  <li>Click <strong>View Details</strong> on any session to process transcription with Gemini 2.5 Pro, edit speaker names, translate, and export.</li>
+                  <li>Click <strong>View Details</strong> on any session to process transcription with Google Gemini 2.5, edit speaker names, translate, and export.</li>
                 </ul>
               </CardContent>
             </Card>
@@ -122,7 +122,7 @@ export default function SessionsGuide() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <ul className="list-disc pl-5 space-y-2">
-                  <li><strong>Transcription (On-Demand):</strong> Click Process/Transcribe in the session detail to let <strong>Gemini 2.5 Pro</strong> create the transcript with <strong>10+ speaker identification</strong>.</li>
+                  <li><strong>Transcription (On-Demand):</strong> Click Process/Transcribe in the session detail to let <strong>Google Gemini 2.5</strong> create the transcript with <strong>10+ speaker identification</strong>.</li>
                   <li><strong>Audio Playback:</strong> Use the built-in player to review the original recording.</li>
                   <li><strong>Edit Speakers:</strong> Rename speaker labels after transcription for clarity. Changes are saved to the session.</li>
                   <li><strong>Notes & Documents:</strong> Add notes and attach supporting images or files. Sessions with documents appear under the “With Documents” tab.</li>

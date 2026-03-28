@@ -19,7 +19,7 @@ export default function VideoMeetingsGuide() {
         
         {/* Open Graph */}
         <meta property="og:title" content="Video Meetings Guide - Dicta-Notes" />
-        <meta property="og:description" content="Step-by-step instructions for capturing online meeting audio (Zoom, Teams, Meet) using your browser with Gemini 2.5 Pro transcription, 10+ speaker identification, and translation in 130+ languages." />
+        <meta property="og:description" content="Step-by-step instructions for capturing online meeting audio (Zoom, Teams, Meet) using your browser with Google Gemini 2.5 transcription, 10+ speaker identification, and translation in 130+ languages." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://dicta-notes.com/video-meetings-guide" />
         
@@ -72,7 +72,7 @@ export default function VideoMeetingsGuide() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>Compatible with Zoom, Microsoft Teams, Google Meet, Webex, and most web-based platforms</li>
                 <li>No installs required — capture audio using your browser</li>
-                <li>Gemini 2.5 Pro AI transcription with 10+ speakers identified</li>
+                <li>Google Gemini 2.5 transcription with 10+ speakers identified</li>
                 <li>Translation in 130+ languages</li>
                 <li>Export to PDF, Word, Text, or Markdown</li>
               </ul>
@@ -125,7 +125,7 @@ export default function VideoMeetingsGuide() {
                 <li>Click <strong>Start Recording</strong> when your meeting begins</li>
                 <li>Watch live words appear on screen for immediate feedback</li>
                 <li>When finished, click <strong>Stop</strong> and then <strong>Save Session</strong></li>
-                <li>Open the saved session to run AI transcription with <strong>Gemini 2.5 Pro</strong></li>
+                <li>Open the saved session to run AI transcription with <strong>Google Gemini 2.5</strong></li>
               </ol>
               <p className="text-sm text-muted-foreground">The saved session provides speaker labeling (10+ speakers), language detection, translation in 130+ languages, and multiple export options.</p>
             </CardContent>

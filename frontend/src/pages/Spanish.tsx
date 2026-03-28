@@ -24,7 +24,7 @@ export default function Spanish() {
       <Helmet>
         <html lang="es" />
         <title>Dicta-Notes | Transcripción de Reuniones con IA en Tiempo Real</title>
-        <meta name="description" content="Dicta-Notes utiliza IA avanzada para transcribir reuniones en tiempo real con identificación de hablantes. Soporte para más de 130 idiomas, transcripción con Gemini 2.5 Pro, y exportación en múltiples formatos." />
+        <meta name="description" content="Dicta-Notes utiliza IA avanzada para transcribir reuniones en tiempo real con identificación de hablantes. Soporte para más de 130 idiomas, transcripción con Google Gemini 2.5, y exportación en múltiples formatos." />
         <link rel="canonical" href="https://dicta-notes.com/spanish" />
         
         {/* Hreflang tags */}
@@ -91,7 +91,7 @@ export default function Spanish() {
             Transcripción de Reuniones con IA
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes transcribe tus reuniones en tiempo real utilizando inteligencia artificial avanzada de Google Gemini 2.5 Pro. Identifica automáticamente hasta 10+ hablantes diferentes y traduce a más de 130 idiomas.
+            Dicta-Notes transcribe tus reuniones en tiempo real utilizando inteligencia artificial avanzada de Google Gemini 2.5. Identifica automáticamente hasta 10+ hablantes diferentes y traduce a más de 130 idiomas.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

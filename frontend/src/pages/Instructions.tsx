@@ -69,7 +69,7 @@ export default function Instructions() {
     <>
       <Helmet>
         <title>Instructions & Guides - Dicta-Notes</title>
-        <meta name="description" content="Step-by-step guides for using Dicta-Notes: AI-powered meeting transcription with Gemini 2.5 Pro, 10+ speaker identification, translation in 130+ languages, and export options." />
+        <meta name="description" content="Step-by-step guides for using Dicta-Notes: AI-powered meeting transcription with Google Gemini 2.5, 10+ speaker identification, translation in 130+ languages, and export options." />
         <link rel="canonical" href="https://dicta-notes.com/instructions" />
         
         {/* Open Graph */}
@@ -151,7 +151,7 @@ export default function Instructions() {
                           <p className="text-sm text-gray-600">Real-time UX feedback as you speak</p>
                         </div>
                         <div className="bg-white p-3 rounded border">
-                          <h4 className="font-semibold text-purple-700">🟣 Gemini 2.5 Pro</h4>
+                          <h4 className="font-semibold text-purple-700">🟣 Google Gemini 2.5</h4>
                           <p className="text-sm text-gray-600">Powerful AI transcription engine</p>
                         </div>
                         <div className="bg-white p-3 rounded border">
@@ -214,7 +214,7 @@ export default function Instructions() {
                           </div>
 
                           <div className="bg-white p-4 rounded-lg border-l-4 border-purple-500">
-                            <h4 className="font-bold text-purple-700 mb-2">🟣 Engine 2: Gemini 2.5 Pro (AI Transcription)</h4>
+                            <h4 className="font-bold text-purple-700 mb-2">🟣 Engine 2: Google Gemini 2.5 (AI Transcription)</h4>
                             <p className="text-sm text-gray-700 mb-2"><strong>What it does:</strong> Creates professional transcription when you need it</p>
                             <ul className="text-sm text-gray-600 list-disc pl-4 space-y-1">
                               <li>Powerful AI transcription with speaker identification</li>
@@ -223,6 +223,9 @@ export default function Instructions() {
                               <li>High-quality, production-ready transcripts</li>
                             </ul>
                             <p className="text-xs text-purple-600 mt-2"><strong>Use:</strong> Click "Process" on any saved session to transcribe</p>
+                            <p className="text-xs text-muted-foreground mt-2 border-t border-purple-100 pt-2">
+                              <strong>Models:</strong> Most saved-session transcription runs on <strong>Gemini 2.5 Flash</strong> for speed and quality; <strong>Gemini 2.5 Pro</strong> is used in some backend flows.
+                            </p>
                           </div>
 
                           <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
@@ -314,7 +317,7 @@ export default function Instructions() {
                           <li><strong>Test first</strong> - Try a quick test recording before important meetings</li>
                         </ul>
                         <ul className="list-disc pl-5 space-y-1 text-yellow-700">
-                          <li><strong>Save recordings</strong> - Process with Gemini 2.5 Pro when ready</li>
+                          <li><strong>Save recordings</strong> - Process with Google Gemini 2.5 when ready</li>
                           <li><strong>Use System Audio</strong> for screen-shared presentations</li>
                           <li><strong>Use Microphone</strong> for in-person meetings</li>
                           <li><strong>Install PWA</strong> for better performance</li>
@@ -375,7 +378,7 @@ export default function Instructions() {
                         <div>
                           <h4 className="text-medium text-red-700">Transcription Processing Issues:</h4>
                           <ul className="list-disc pl-5 space-y-1 text-red-600 text-sm">
-                            <li>Wait for Gemini 2.5 Pro processing to complete</li>
+                            <li>Wait for Google Gemini 2.5 processing to complete</li>
                             <li>Check session detail page for progress</li>
                             <li>Large audio files may take a few minutes to process</li>
                           </ul>
@@ -388,10 +391,10 @@ export default function Instructions() {
                       <div className="text-gray-700 space-y-2">
                         <p>
                           <strong>This is a professional enterprise platform!</strong> Three powerful AI engines work together: 
-                          Browser Speech for instant UX feedback, Gemini 2.5 Pro for professional transcription, and Google Translate for international collaboration.
+                          Browser Speech for instant UX feedback, Google Gemini 2.5 for professional transcription, and Google Translate for international collaboration.
                         </p>
                         <p>
-                          <strong>Universal language support:</strong> Gemini 2.5 Pro transcribes natively in 130+ languages - you only need Google Translate 
+                          <strong>Universal language support:</strong> Google Gemini 2.5 transcribes natively in 130+ languages - you only need Google Translate 
                           if you want to convert transcripts between different languages for team collaboration.
                         </p>
                         <p>

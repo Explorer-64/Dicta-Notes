@@ -23,7 +23,7 @@ export default function Hausa() {
       <Helmet>
         <html lang="ha" />
         <title>Dicta-Notes | Rubuta Tarurrukan Aiki da AI a Lokacin da Ake Yi</title>
-        <meta name="description" content="Dicta-Notes yana amfani da AI na zamani don rubuta tarurrukan aiki a lokacin da ake yi tare da gane masu magana. Yana goyan bayan harsuna sama da 130, rubuta tare da Gemini 2.5 Pro, kuma fitar da su ta hanyoyi daban-daban." />
+        <meta name="description" content="Dicta-Notes yana amfani da AI na zamani don rubuta tarurrukan aiki a lokacin da ake yi tare da gane masu magana. Yana goyan bayan harsuna sama da 130, rubuta tare da Google Gemini 2.5, kuma fitar da su ta hanyoyi daban-daban." />
         <link rel="canonical" href="https://dicta-notes.com/hausa" />
         <meta name="robots" content="index, follow" />
         
@@ -93,7 +93,7 @@ export default function Hausa() {
             Rubuta Tarurrukan Aiki da AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes yana rubuta tarurrukan aiki naku a lokacin da ake yi ta amfani da fasahar AI ta zamani ta Google Gemini 2.5 Pro. Yana gane har masu magana 10+ daban-daban kai tsaye kuma yana fassara zuwa harsuna sama da 130.
+            Dicta-Notes yana rubuta tarurrukan aiki naku a lokacin da ake yi ta amfani da fasahar AI ta zamani ta Google Gemini 2.5. Yana gane har masu magana 10+ daban-daban kai tsaye kuma yana fassara zuwa harsuna sama da 130.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

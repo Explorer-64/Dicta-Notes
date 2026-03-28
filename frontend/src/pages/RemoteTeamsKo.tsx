@@ -21,7 +21,7 @@ const featureHighlights = [
   {
     icon: <Archive className="h-8 w-8 text-yellow-500" />,
     title: "자동 회의 노트",
-    description: "Gemini 2.5 Pro로 구동되는 화자 식별 세부 노트를 받으세요. 대화에 집중하고 노트 작성은 하지 마세요.",
+    description: "Google Gemini 2.5로 구동되는 화자 식별 세부 노트를 받으세요. 대화에 집중하고 노트 작성은 하지 마세요.",
   },
 ];
 
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "브라우저 음성과 최종 전사의 차이점은 무엇인가요?",
-    answer: "녹음 중에 보이는 라이브 텍스트는 즉각적인 UX 피드백을 위한 것입니다. 최종 고정밀 전사는 최대 품질과 신뢰성을 위해 저장된 오디오에서 Gemini 2.5 Pro에 의해 처리됩니다."
+    answer: "녹음 중에 보이는 라이브 텍스트는 즉각적인 UX 피드백을 위한 것입니다. 최종 고정밀 전사는 최대 품질과 신뢰성을 위해 저장된 오디오에서 Google Gemini 2.5에 의해 처리됩니다."
   },
   {
     question: "기밀 내부 토론에 적합한가요?",

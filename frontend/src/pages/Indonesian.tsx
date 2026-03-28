@@ -93,7 +93,7 @@ export default function Indonesian() {
             Transkripsi Rapat dengan AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes mentranskripsikan rapat Anda secara real-time menggunakan Google Gemini 2.5 Pro AI yang canggih. Secara otomatis mengenali hingga 10+ pembicara berbeda dan menerjemahkan ke 130+ bahasa.
+            Dicta-Notes mentranskripsikan rapat Anda secara real-time menggunakan Google Gemini 2.5 yang canggih. Secara otomatis mengenali hingga 10+ pembicara berbeda dan menerjemahkan ke 130+ bahasa.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

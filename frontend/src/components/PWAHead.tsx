@@ -21,7 +21,7 @@ export function PWAHead() {
       <meta name="application-name" content={PWA_CONFIG.name} />
       <meta name="theme-color" content={PWA_CONFIG.themeColor} />
       <meta name="background-color" content={PWA_CONFIG.backgroundColor} />
-      <meta name="description" content="Dicta-Notes offers AI transcription with Gemini 2.5 Pro, 10+ speaker identification, 130+ language translations, and collaborative company workspaces. Export to PDF, Word, and more." />
+      <meta name="description" content="Dicta-Notes offers AI transcription with Google Gemini 2.5, 10+ speaker identification, 130+ language translations, and collaborative company workspaces. Export to PDF, Word, and more." />
       <meta name="keywords" content="meeting transcription, speaker identification, AI transcription, translation, team collaboration, company workspace, meeting notes, Gemini AI, PWA" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
       <meta name="robots" content="index, follow" />
@@ -71,7 +71,7 @@ export function PWAHead() {
       
       {/* OpenGraph meta tags for sharing */}
       <meta property="og:title" content="Dicta-Notes | AI Transcription for Collaborative Teams" />
-      <meta property="og:description" content="Real-time transcription with Gemini 2.5 Pro, 10+ speaker ID, 130+ language translations, and company workspaces for seamless collaboration." />
+      <meta property="og:description" content="Real-time transcription with Google Gemini 2.5, 10+ speaker ID, 130+ language translations, and company workspaces for seamless collaboration." />
       <meta property="og:image" content={PWA_CONFIG.icons.find(icon => icon.sizes === '512x512')?.src} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={PWA_CONFIG.name} />
@@ -80,7 +80,7 @@ export function PWAHead() {
       {/* Twitter Card meta tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Dicta-Notes | AI Transcription for Collaborative Teams" />
-      <meta name="twitter:description" content="Real-time transcription with Gemini 2.5 Pro, 10+ speaker ID, 130+ language translations, and company workspaces." />
+      <meta name="twitter:description" content="Real-time transcription with Google Gemini 2.5, 10+ speaker ID, 130+ language translations, and company workspaces." />
       
       {/* Additional PWA-related tags */}
       <meta name="apple-touch-fullscreen" content="yes" />

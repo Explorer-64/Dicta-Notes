@@ -21,7 +21,7 @@ interface SEOMetaTagsProps {
 const defaultMeta = {
   title: "Dicta-Notes - AI Meeting Transcription & Translation",
   description:
-    "AI meeting transcription powered by Gemini 2.5 Pro on saved sessions. Identify 10+ speakers, translate in 130+ languages, export to PDF/Word/Text/Markdown, install as a PWA, and manage recordings in Sessions.",
+    "AI meeting transcription powered by Google Gemini 2.5 on saved sessions. Identify 10+ speakers, translate in 130+ languages, export to PDF/Word/Text/Markdown, install as a PWA, and manage recordings in Sessions.",
   keywords:
     "ai transcription, meeting transcription, 10+ speakers, multi speaker identification, 130+ languages, translation, export pdf word text markdown, pwa offline, session management, dictanotes",
   author: "Dicta-Notes",
@@ -120,7 +120,7 @@ export const seoConfigs = {
   home: {
     title: "AI Transcription, Translation & Exports for Meetings",
     description:
-      "Dicta-Notes helps you capture meetings and process them with Gemini 2.5 Pro after saving. Identify 10+ speakers, translate in 130+ languages, export to PDF/Word/Text/Markdown, and install as a PWA.",
+      "Dicta-Notes helps you capture meetings and process them with Google Gemini 2.5 after saving. Identify 10+ speakers, translate in 130+ languages, export to PDF/Word/Text/Markdown, and install as a PWA.",
     keywords:
       "ai meeting transcription, speaker identification 10+, translate 130+ languages, export pdf word text markdown, pwa install, meeting notes",
   },
@@ -128,9 +128,9 @@ export const seoConfigs = {
   transcribe: {
     title: "Start Recording | AI Meeting Transcription",
     description:
-      "Record your meeting, then process it with Gemini 2.5 Pro. Get accurate transcripts with 10+ speaker identification, translation to 130+ languages, and multiple export formats.",
+      "Record your meeting, then process it with Google Gemini 2.5. Get accurate transcripts with 10+ speaker identification, translation to 130+ languages, and multiple export formats.",
     keywords:
-      "start recording transcription, gemini 2.5 pro transcription, 10+ speakers, translate 130+ languages, export pdf word text",
+      "start recording transcription, google gemini 2.5, 10+ speakers, translate 130+ languages, export pdf word text",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",

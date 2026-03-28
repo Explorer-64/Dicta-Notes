@@ -23,7 +23,7 @@ export default function Swahili() {
       <Helmet>
         <html lang="sw" />
         <title>Dicta-Notes | Uandishi wa Mikutano kwa Wakati Halisi na AI</title>
-        <meta name="description" content="Dicta-Notes inatumia AI ya hali ya juu kuandika mikutano kwa wakati halisi na utambuzi wa wazungumzaji. Inasaidia lugha zaidi ya 130, uandishi na Gemini 2.5 Pro, na usafirishaji katika muundo mbalimbali." />
+        <meta name="description" content="Dicta-Notes inatumia AI ya hali ya juu kuandika mikutano kwa wakati halisi na utambuzi wa wazungumzaji. Inasaidia lugha zaidi ya 130, uandishi na Google Gemini 2.5, na usafirishaji katika muundo mbalimbali." />
         <link rel="canonical" href="https://dicta-notes.com/swahili" />
         <meta name="robots" content="index, follow" />
         
@@ -93,7 +93,7 @@ export default function Swahili() {
             Uandishi wa Mikutano kwa AI
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes inaandika mikutano yako kwa wakati halisi kwa kutumia akili bandia ya hali ya juu ya Google Gemini 2.5 Pro. Inatambua kiotomatiki hadi wazungumzaji 10+ tofauti na kutafsiri katika lugha zaidi ya 130.
+            Dicta-Notes inaandika mikutano yako kwa wakati halisi kwa kutumia akili bandia ya hali ya juu ya Google Gemini 2.5. Inatambua kiotomatiki hadi wazungumzaji 10+ tofauti na kutafsiri katika lugha zaidi ya 130.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

@@ -21,7 +21,7 @@ const featureHighlights = [
   {
     icon: <Archive className="h-8 w-8 text-yellow-500" />,
     title: "Notas de Reunión Automáticas",
-    description: "Obtén notas detalladas con identificación de interlocutores, impulsadas por Gemini 2.5 Pro. Concéntrate en la conversación, no en tomar notas.",
+    description: "Obtén notas detalladas con identificación de interlocutores, impulsadas por Google Gemini 2.5. Concéntrate en la conversación, no en tomar notas.",
   },
 ];
 
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "¿Cuál es la diferencia entre el habla del navegador y la transcripción final?",
-    answer: "El texto en vivo que ves durante la grabación es para retroalimentación UX inmediata. La transcripción final altamente precisa es procesada por Gemini 2.5 Pro del audio guardado para máxima calidad y confiabilidad."
+    answer: "El texto en vivo que ves durante la grabación es para retroalimentación UX inmediata. La transcripción final altamente precisa es procesada por Google Gemini 2.5 del audio guardado para máxima calidad y confiabilidad."
   },
   {
     question: "¿Es esto adecuado para discusiones internas confidenciales?",

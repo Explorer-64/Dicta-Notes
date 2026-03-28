@@ -93,7 +93,7 @@ export default function Tagalog() {
             AI Meeting Transcription
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Ang Dicta-Notes ay nag-transcribe ng iyong meetings sa real-time gamit ang advanced Google Gemini 2.5 Pro AI. Awtomatikong nakikilala ang hanggang 10+ magkaibang nagsasalita at nagsasalin sa 130+ wika.
+            Ang Dicta-Notes ay nag-transcribe ng iyong meetings sa real-time gamit ang advanced Google Gemini 2.5. Awtomatikong nakikilala ang hanggang 10+ magkaibang nagsasalita at nagsasalin sa 130+ wika.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

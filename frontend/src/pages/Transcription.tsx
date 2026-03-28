@@ -226,7 +226,7 @@ export default function Transcription() {
               <Alert className="mt-4 border-green-200 dark:border-green-800">
                 <Info className="h-4 w-4" />
                 <AlertDescription>
-                  Live mode uses Google Speech-to-Text with Gemini fallback for highest accuracy and multi-speaker detection.
+                  Live mode uses Google Speech-to-Text with Google Gemini 2.5 fallback for highest accuracy and multi-speaker detection.
                 </AlertDescription>
               </Alert>
             )}

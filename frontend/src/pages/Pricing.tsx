@@ -160,9 +160,9 @@ export default function Pricing() {
       <Header />
       <BackButton />
       <SEOMetaTags
-        title="Pricing Plans - Choose Your Plan"
-        description="Simple, transparent pricing for AI meeting transcription. Free tier with 30 min/month, or upgrade to Individual ($4.99), Professional ($9.99), or Business ($49.99) plans. Beta users get 10% off forever."
-        keywords="pricing, subscription plans, meeting transcription pricing, AI transcription cost, free trial, beta discount"
+        title="Pricing Plans - Free During Beta"
+        description="Dicta-Notes is free during public beta. All features included. Sign up now and lock in 50% off your first year when we launch paid plans."
+        keywords="pricing, subscription plans, meeting transcription pricing, AI transcription cost, free beta, early adopter discount"
         type="website"
       />
       
@@ -175,10 +175,13 @@ export default function Pricing() {
           <h1 className="text-5xl font-bold text-foreground mb-6">
             Pro Features. <span className="text-orange-600">Free during Beta.</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We are building the world's best offline meeting assistant. 
+          <p className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            We are building the world's best offline-first, multilingual meeting transcription tool.
             Join our public beta to get <b>unlimited access</b> to all premium features while we refine the product.
           </p>
+          <div className="inline-flex items-center gap-2 bg-orange-50 dark:bg-orange-950 border border-orange-200 dark:border-orange-800 rounded-lg px-5 py-3 text-orange-700 dark:text-orange-300 text-sm font-medium">
+            🎁 Early adopter offer: Sign up now and lock in <strong>50% off your first year</strong> when paid plans launch.
+          </div>
         </div>
       </section>
 
@@ -267,6 +270,78 @@ export default function Pricing() {
               </Card>
             );
           })}
+        </div>
+      </section>
+
+      {/* Upcoming Plans Preview */}
+      <section className="pb-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-2">Coming After Beta</h2>
+            <p className="text-muted-foreground">Sign up now to lock in 50% off your first year on any of these plans.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 opacity-75">
+            <Card className="border-dashed">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-muted text-muted-foreground">Coming Soon</Badge>
+                <CardTitle>Solo</CardTitle>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold">$5.99</span>
+                  <span className="text-muted-foreground">/mo</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />300 minutes/month</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />All transcription modes</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />130+ language translation</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Speaker ID (10+ speakers)</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />PDF, Word, Markdown export</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Offline recording + cloud sync</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="border-dashed border-orange-300 dark:border-orange-700">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300">Most Popular</Badge>
+                <CardTitle>Professional</CardTitle>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold">$12.99</span>
+                  <span className="text-muted-foreground">/mo</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Unlimited minutes</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Priority Gemini processing</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Advanced speaker labeling</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Zoom integration</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />5 company workspaces</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />All export formats + timestamps</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="border-dashed">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-muted text-muted-foreground">Coming Soon</Badge>
+                <CardTitle>Team</CardTitle>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold">$39.99</span>
+                  <span className="text-muted-foreground">/mo</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />10 team seats included</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Shared company workspaces</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Unlimited minutes pooled</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Admin controls</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Team session management</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-green-500" />Priority support</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -473,7 +548,7 @@ export default function Pricing() {
                 What if I'm a beta user?
               </h3>
               <p className="text-muted-foreground">
-                All beta users receive a permanent 10% discount on any paid plan as a thank you for being early supporters!
+                Beta users lock in <strong>50% off their first year</strong> on any paid plan when we launch — no credit card required now. Your early support means a lot and we want to reward it.
               </p>
             </div>
           </div>

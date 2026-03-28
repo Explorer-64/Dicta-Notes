@@ -245,7 +245,7 @@ async def transcribe_chunk(request: TranscribeChunkRequest, user: AuthorizedUser
                 prompt += speaker_context
             
             # Call Gemini API
-            model = get_gemini_client('gemini-2.0-flash')
+            model = get_gemini_client('gemini-2.5-flash')
             
             # Convert base64 audio to bytes for Gemini
             try:

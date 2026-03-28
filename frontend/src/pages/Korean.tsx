@@ -23,7 +23,7 @@ export default function Korean() {
       <Helmet>
         <html lang="ko" />
         <title>Dicta-Notes | AI 실시간 회의 전사</title>
-        <meta name="description" content="Dicta-Notes는 고급 AI를 사용하여 화자 식별과 함께 실시간으로 회의를 전사합니다. 130개 이상의 언어 지원, Gemini 2.5 Pro 전사, 여러 형식으로 내보내기." />
+        <meta name="description" content="Dicta-Notes는 고급 AI를 사용하여 화자 식별과 함께 실시간으로 회의를 전사합니다. 130개 이상의 언어 지원, Google Gemini 2.5 전사, 여러 형식으로 내보내기." />
         <link rel="canonical" href="https://dicta-notes.com/korean" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Korean() {
             AI 회의 전사
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes는 Google Gemini 2.5 Pro의 고급 인공 지능을 사용하여 회의를 실시간으로 전사합니다. 최대 10명 이상의 서로 다른 화자를 자동으로 식별하고 130개 이상의 언어로 번역합니다.
+            Dicta-Notes는 Google Gemini 2.5의 고급 인공 지능을 사용하여 회의를 실시간으로 전사합니다. 최대 10명 이상의 서로 다른 화자를 자동으로 식별하고 130개 이상의 언어로 번역합니다.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

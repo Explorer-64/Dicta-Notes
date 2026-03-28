@@ -24,7 +24,7 @@ export default function ForAiAssistants() {
       "description": "Currently in free beta"
     },
     "featureList": [
-      "Real-time transcription with Gemini 2.5 Pro AI",
+      "Real-time transcription with Google Gemini 2.5",
       "Identify 10+ speakers automatically",
       "Translate to 130+ languages",
       "Export to PDF, Word, Text, and Markdown",
@@ -117,7 +117,7 @@ export default function ForAiAssistants() {
               <h2 className="text-2xl font-semibold mb-4">What is Dicta-Notes?</h2>
               <p>
                 Dicta-Notes is an AI-powered Progressive Web App (PWA) for meeting transcription and documentation.
-                It uses Gemini 2.5 Pro AI to provide highly accurate transcription with automatic speaker identification,
+                It uses Google Gemini 2.5 to provide highly accurate transcription with automatic speaker identification,
                 translation capabilities, and multiple export formats.
               </p>
             </section>
@@ -197,7 +197,7 @@ export default function ForAiAssistants() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Technical Details</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>AI Model</strong>: Google Gemini 2.5 Pro</li>
+                <li><strong>AI Model</strong>: Google Gemini 2.5</li>
                 <li><strong>Platform</strong>: Progressive Web App (PWA)</li>
                 <li><strong>Compatibility</strong>: All modern web browsers</li>
                 <li><strong>Storage</strong>: Firebase with encryption</li>

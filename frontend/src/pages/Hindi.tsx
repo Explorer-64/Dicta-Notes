@@ -23,7 +23,7 @@ export default function Hindi() {
       <Helmet>
         <html lang="hi" />
         <title>Dicta-Notes | AI द्वारा रीयल-टाइम मीटिंग ट्रांसक्रिप्शन</title>
-        <meta name="description" content="Dicta-Notes उन्नत AI का उपयोग करके रीयल-टाइम में मीटिंग को ट्रांसक्राइब करता है और वक्ताओं की पहचान करता है। 130+ भाषाओं का समर्थन, Gemini 2.5 Pro के साथ ट्रांसक्रिप्शन, और कई फॉर्मेट में एक्सपोर्ट।" />
+        <meta name="description" content="Dicta-Notes उन्नत AI का उपयोग करके रीयल-टाइम में मीटिंग को ट्रांसक्राइब करता है और वक्ताओं की पहचान करता है। 130+ भाषाओं का समर्थन, Google Gemini 2.5 के साथ ट्रांसक्रिप्शन, और कई फॉर्मेट में एक्सपोर्ट।" />
         <link rel="canonical" href="https://dicta-notes.com/hindi" />
         
         {/* Hreflang tags */}
@@ -90,7 +90,7 @@ export default function Hindi() {
             AI मीटिंग ट्रांसक्रिप्शन
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Dicta-Notes Google Gemini 2.5 Pro के उन्नत आर्टिफिशियल इंटेलिजेंस का उपयोग करके आपकी मीटिंग को रीयल-टाइम में ट्रांसक्राइब करता है। स्वचालित रूप से 10+ विभिन्न वक्ताओं की पहचान करता है और 130+ भाषाओं में अनुवाद करता है।
+            Dicta-Notes Google Gemini 2.5 के उन्नत आर्टिफिशियल इंटेलिजेंस का उपयोग करके आपकी मीटिंग को रीयल-टाइम में ट्रांसक्राइब करता है। स्वचालित रूप से 10+ विभिन्न वक्ताओं की पहचान करता है और 130+ भाषाओं में अनुवाद करता है।
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">

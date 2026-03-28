@@ -16,7 +16,7 @@ export default function RecordingGuide() {
         <title>Recording & Transcription Guide - Dicta-Notes</title>
         <meta name="description" content="How to record meetings in Dicta-Notes and get AI-powered transcripts with 10+ speakers, translation to 130+ languages, and easy exports." />
         <meta property="og:title" content="Recording & Transcription Guide - Dicta-Notes" />
-        <meta property="og:description" content="Start, pause, and stop recordings; capture system audio for online meetings; process transcripts with Gemini 2.5 Pro; translate and export." />
+        <meta property="og:description" content="Start, pause, and stop recordings; capture system audio for online meetings; process transcripts with Google Gemini 2.5; translate and export." />
       </Helmet>
       
       {/* Article Schema for SEO */}
@@ -81,7 +81,7 @@ export default function RecordingGuide() {
               <CardContent className="space-y-2 text-sm">
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Live layer:</strong> Words appear on-screen while you speak for instant confidence.</li>
-                  <li><strong>AI layer (after save):</strong> Open the saved session to process with <strong>Gemini 2.5 Pro</strong> for high-accuracy transcription and <strong>10+ speaker identification</strong>.</li>
+                  <li><strong>AI layer (after save):</strong> Open the saved session to process with <strong>Google Gemini 2.5</strong> for high-accuracy transcription and <strong>10+ speaker identification</strong>.</li>
                 </ul>
               </CardContent>
             </Card>

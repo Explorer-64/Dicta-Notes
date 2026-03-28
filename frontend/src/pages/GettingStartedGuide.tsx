@@ -63,12 +63,12 @@ export default function GettingStartedGuide() {
               <CardContent className="space-y-4">
                 <p>
                   Dicta-Notes helps you capture meetings, automatically differentiate speakers, translate to 130+ languages, and export professional results. 
-                  Transcription is processed on saved sessions with Gemini 2.5 Pro for high accuracy and 10+ speaker identification.
+                  Transcription is processed on saved sessions with Google Gemini 2.5 for high accuracy and 10+ speaker identification.
                 </p>
 
                 <h3 className="text-lg font-medium">Key Features</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Universal transcription (on save)</strong> — Process with Gemini 2.5 Pro and identify 10+ speakers</li>
+                  <li><strong>Universal transcription (on save)</strong> — Process with Google Gemini 2.5 and identify 10+ speakers</li>
                   <li><strong>Real-time on-screen words</strong> — Immediate feedback while recording</li>
                   <li><strong>Translation</strong> — View or export in 130+ languages</li>
                   <li><strong>Session management</strong> — Organize, filter, and revisit your meetings</li>
@@ -90,7 +90,7 @@ export default function GettingStartedGuide() {
                   <li><strong>Set your User Type</strong> in Profile Settings (see below)</li>
                   <li>Open the <strong>Transcribe</strong> page and start recording</li>
                   <li>Stop and <strong>Save Session</strong> when finished</li>
-                  <li>Open the saved session and click <strong>Transcribe</strong> to process with Gemini 2.5 Pro</li>
+                  <li>Open the saved session and click <strong>Transcribe</strong> to process with Google Gemini 2.5</li>
                   <li>Optionally translate, then export as PDF/Word/Text/Markdown</li>
                 </ol>
               </CardContent>

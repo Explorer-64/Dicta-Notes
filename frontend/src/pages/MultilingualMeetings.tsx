@@ -22,7 +22,7 @@ const featureHighlights = [
   {
     icon: <Zap className="h-8 w-8 text-yellow-500" />,
     title: "On-Demand AI Processing",
-    description: "Record now, and let Gemini 2.5 Pro transcribe, identify speakers, and translate your audio whenever you're ready.",
+    description: "Record now, and let Google Gemini 2.5 transcribe, identify speakers, and translate your audio whenever you're ready.",
   },
 ];
 

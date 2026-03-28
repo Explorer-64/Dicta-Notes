@@ -26,7 +26,7 @@ ARCHITECTURE COMPONENTS:
 
 3. Processing Pipeline
    - Real-time audio streaming from bot to backend
-   - Transcription service (Gemini 2.5 Pro in our case)
+   - Transcription service (Google Gemini 2.5 in our case)
    - Speaker diarization and identification
    - Storage of transcripts and recordings
 
@@ -420,7 +420,7 @@ COST_ANALYSIS = {
 
 DICTA_NOTES_INTEGRATION = {
     "current_architecture": {
-        "transcription": "Gemini 2.5 Pro (real-time)",
+        "transcription": "Google Gemini 2.5 (Flash/Pro; real-time + on-demand)",
         "audio_input": "User's microphone (browser)",
         "storage": "Firestore",
         "deployment": "PWA (offline capable)"
@@ -428,8 +428,8 @@ DICTA_NOTES_INTEGRATION = {
     
     "bot_integration_changes_required": {
         "audio_pipeline": {
-            "current": "Browser microphone → Gemini 2.5 Pro",
-            "with_bot": "Meeting bot → Audio stream → Backend → Gemini 2.5 Pro",
+            "current": "Browser microphone → Google Gemini 2.5",
+            "with_bot": "Meeting bot → Audio stream → Backend → Google Gemini 2.5",
             "impact": "Need backend audio processing pipeline"
         },
         

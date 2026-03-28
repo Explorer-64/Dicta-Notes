@@ -10,7 +10,7 @@ router = APIRouter()
 @router.post("/detect-language", response_class=PlainTextResponse)
 async def detect_language(audio_file: UploadFile = File(...)):
     try:
-        model = get_gemini_client("gemini-2.0-flash")
+        model = get_gemini_client("gemini-2.5-flash")
     except Exception:
         return PlainTextResponse("Gemini model not configured", status_code=500)
 

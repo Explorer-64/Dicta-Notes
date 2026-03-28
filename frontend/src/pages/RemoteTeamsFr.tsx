@@ -21,7 +21,7 @@ const featureHighlights = [
   {
     icon: <Archive className="h-8 w-8 text-yellow-500" />,
     title: "Notes de Réunion Automatiques",
-    description: "Obtenez des notes détaillées avec identification des intervenants, alimentées par Gemini 2.5 Pro. Concentrez-vous sur la conversation, pas sur la prise de notes.",
+    description: "Obtenez des notes détaillées avec identification des intervenants, alimentées par Google Gemini 2.5. Concentrez-vous sur la conversation, pas sur la prise de notes.",
   },
 ];
 
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "Quelle est la différence entre la parole du navigateur et la transcription finale ?",
-    answer: "Le texte en direct que vous voyez pendant l'enregistrement est pour le retour UX immédiat. La transcription finale hautement précise est traitée par Gemini 2.5 Pro à partir de l'audio enregistré pour une qualité et une fiabilité maximales."
+    answer: "Le texte en direct que vous voyez pendant l'enregistrement est pour le retour UX immédiat. La transcription finale hautement précise est traitée par Google Gemini 2.5 à partir de l'audio enregistré pour une qualité et une fiabilité maximales."
   },
   {
     question: "Cela convient-il aux discussions internes confidentielles ?",

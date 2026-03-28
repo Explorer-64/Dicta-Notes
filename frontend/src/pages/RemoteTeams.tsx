@@ -22,7 +22,7 @@ const featureHighlights = [
   {
     icon: <Archive className="h-8 w-8 text-yellow-500" />,
     title: "Automated Meeting Notes",
-    description: "Get detailed, speaker-identified notes powered by Gemini 2.5 Pro. Focus on the conversation, not on taking notes.",
+    description: "Get detailed, speaker-identified notes powered by Google Gemini 2.5. Focus on the conversation, not on taking notes.",
   },
 ];
 
@@ -37,7 +37,7 @@ const faqItems = [
   },
   {
     question: "What's the difference between browser speech and the final transcript?",
-    answer: "The live text you see during recording is for immediate UX feedback. The final, highly-accurate transcript is processed by Gemini 2.5 Pro from the saved audio for maximum quality and reliability."
+    answer: "The live text you see during recording is for immediate UX feedback. The final, highly-accurate transcript is processed by Google Gemini 2.5 from the saved audio for maximum quality and reliability."
   },
   {
     question: "Is this suitable for confidential internal discussions?",
