@@ -149,16 +149,24 @@ export function Header() {
                 >
                   AI Benefits
                 </Button>
-                <Button 
-                  variant={isActive("/non-profit-solutions") ? "secondary" : "ghost"} 
+                <Button
+                  variant={isActive("/non-profit-solutions") ? "secondary" : "ghost"}
                   onClick={() => navigateTo("/non-profit-solutions")}
                   className="justify-start"
                   data-translate
                 >
                   Non-Profit Solutions
                 </Button>
-                
-                <Button 
+                <Button
+                  variant={isActive("/documents") ? "secondary" : "ghost"}
+                  onClick={() => navigateTo("/documents")}
+                  className="justify-start"
+                  data-translate
+                >
+                  Documents
+                </Button>
+
+                <Button
                   variant={isActive("/settings") ? "secondary" : "ghost"} 
                   onClick={() => navigateTo("/settings")}
                   className="justify-start"
@@ -231,6 +239,7 @@ export function Header() {
                 <DropdownMenuItem onClick={() => navigate("/instructions")} data-translate>Instructions</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate("/ai-benefits")} data-translate>AI Benefits</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate("/non-profit-solutions")} data-translate>Non-Profit Solutions</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate("/documents")} data-translate>Documents</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
