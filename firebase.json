@@ -3,6 +3,10 @@
     "public": "frontend/dist",
     "cleanUrls": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {"source": "/Terms", "destination": "/terms", "type": 301},
+      {"source": "/Privacy", "destination": "/privacy", "type": 301}
+    ],
     "rewrites": [
       {"source": "/routes/**", "run": {"serviceId": "dicta-notes-backend", "region": "us-central1"}},
       {"source": "**", "destination": "/index.html"}
