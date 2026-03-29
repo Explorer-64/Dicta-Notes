@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft } from "lucide-react";
@@ -30,7 +32,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { CompanyPermissions } from "utils/company/permissions";
-import { Trash2, Volume2, FileText, Pencil, Download, Headphones, Users, RefreshCw } from "lucide-react";
+import { Trash2, Volume2, FileText, Pencil, Download, Headphones, Users, RefreshCw, Sparkles, Loader2, ChevronDown } from "lucide-react";
 import { VerificationDialog } from "components/VerificationDialog";
 import { AudioPlayback } from "components/AudioPlayback";
 import { NotesTab } from "components/NotesTab";
@@ -75,6 +77,8 @@ export default function SessionDetail() {
   const { user } = useUserGuardContext();
   const { preferredLanguage } = useLanguageStore();
   const [savedTranslation, setSavedTranslation] = useState<{ langCode: string; texts: string[] } | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analysisResult, setAnalysisResult] = useState<{ title: string; summary: string; key_points: string[]; action_items: string[]; id: string } | null>(null);
 
   // Initialize with meeting start time from session
   const [actualStartTime, setActualStartTime] = useState<Date | null>(null);
@@ -323,6 +327,30 @@ export default function SessionDetail() {
     return () => { if (transcriptionListenerRef.current) transcriptionListenerRef.current(); };
   }, []);
 
+  const handleAnalyzeTranscript = async () => {
+    const fullText = session?.full_text || session?.transcript_data?.full_text;
+    if (!fullText) return;
+    setIsAnalyzing(true);
+    setAnalysisResult(null);
+    try {
+      const res = await brain.document_analysis_analyze_text({
+        text: fullText,
+        title: session?.title || "Untitled Meeting",
+      });
+      if (!res.ok) {
+        const t = await res.text();
+        throw new Error(t || res.statusText);
+      }
+      const data = await res.json();
+      setAnalysisResult(data);
+      toast.success("Transcript analyzed");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Analysis failed");
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
   const handleSeekFromTranscript = (time: number) => {
     setActiveTab('audio');
     seekIdRef.current += 1;
@@ -509,12 +537,56 @@ export default function SessionDetail() {
                    <TabsContent value="transcript" className="mt-4">
                       {session && (session.full_text || session.transcript_data?.full_text) ? (
                         <>
-                          {(session?.segments || session?.transcript_data?.segments)?.length > 0 && (
-                            <TranslateAllButton
-                              sessionId={sessionId}
-                              existingTranslation={savedTranslation}
-                              onTranslationSaved={(langCode, texts) => setSavedTranslation({ langCode, texts })}
-                            />
+                          <div className="flex flex-wrap items-center gap-2 mb-2">
+                            {(session?.segments || session?.transcript_data?.segments)?.length > 0 && (
+                              <TranslateAllButton
+                                sessionId={sessionId}
+                                existingTranslation={savedTranslation}
+                                onTranslationSaved={(langCode, texts) => setSavedTranslation({ langCode, texts })}
+                              />
+                            )}
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              disabled={isAnalyzing}
+                              onClick={handleAnalyzeTranscript}
+                              className="gap-2"
+                            >
+                              {isAnalyzing ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
+                              {isAnalyzing ? "Analyzing…" : "Analyze transcript"}
+                            </Button>
+                          </div>
+
+                          {analysisResult && (
+                            <Card className="mb-4 border-primary/30">
+                              <CardHeader className="pb-2">
+                                <div className="flex items-start justify-between gap-2">
+                                  <CardTitle className="text-base">{analysisResult.title}</CardTitle>
+                                  <Button variant="ghost" size="sm" className="text-xs shrink-0" onClick={() => navigate("/documents")}>
+                                    View in Documents →
+                                  </Button>
+                                </div>
+                              </CardHeader>
+                              <CardContent className="space-y-3 text-sm">
+                                <p className="text-muted-foreground leading-relaxed">{analysisResult.summary}</p>
+                                {analysisResult.key_points?.length > 0 && (
+                                  <div>
+                                    <p className="font-semibold mb-1">Key points</p>
+                                    <ul className="list-disc pl-4 space-y-1 text-muted-foreground">
+                                      {analysisResult.key_points.map((k, i) => <li key={i}>{k}</li>)}
+                                    </ul>
+                                  </div>
+                                )}
+                                {analysisResult.action_items?.length > 0 && (
+                                  <div>
+                                    <p className="font-semibold mb-1">Action items</p>
+                                    <ul className="list-disc pl-4 space-y-1 text-muted-foreground">
+                                      {analysisResult.action_items.map((a, i) => <li key={i}>{a}</li>)}
+                                    </ul>
+                                  </div>
+                                )}
+                              </CardContent>
+                            </Card>
                           )}
                           <TranscriptDisplay
                             fullText={session.full_text || session.transcript_data?.full_text}

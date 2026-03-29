@@ -235,6 +235,62 @@ Original filename hint: {source_filename}"""
     }
 
 
+class AnalyzeTextRequest(BaseModel):
+    text: str
+    title: Optional[str] = None
+
+
+@router.post("/analyze-text", response_model=AnalyzeResponse)
+def analyze_text(
+    body: AnalyzeTextRequest,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+):
+    uid = _uid(current_user)
+    if not uid:
+        raise HTTPException(status_code=401, detail="Invalid user")
+    if not body.text or not body.text.strip():
+        raise HTTPException(status_code=400, detail="No text provided")
+
+    source_title = (body.title or "Transcript").strip()
+    extracted = body.text.strip()[:GEMINI_TEXT_MAX * 2]
+
+    gemini_fields = _analyze_with_gemini(extracted, source_title)
+
+    db = get_firestore_db()
+    if not db:
+        raise HTTPException(status_code=503, detail="Database unavailable")
+
+    created_at = datetime.now(timezone.utc).isoformat()
+    parent = db.collection("documentAnalysis").document(uid)
+    doc_ref = parent.collection("documents").document()
+    doc_id = doc_ref.id
+
+    payload = {
+        "user_id": uid,
+        "source_filename": source_title,
+        "title": gemini_fields["title"],
+        "summary": gemini_fields["summary"],
+        "key_points": gemini_fields["key_points"],
+        "action_items": gemini_fields["action_items"],
+        "full_text": extracted,
+        "language_detected": gemini_fields["language_detected"],
+        "created_at": created_at,
+    }
+    doc_ref.set(payload)
+
+    return AnalyzeResponse(
+        id=doc_id,
+        title=payload["title"],
+        summary=payload["summary"],
+        key_points=payload["key_points"],
+        action_items=payload["action_items"],
+        full_text=payload["full_text"],
+        language_detected=payload["language_detected"],
+        source_filename=payload["source_filename"],
+        created_at=created_at,
+    )
+
+
 @router.post("/analyze-images", response_model=AnalyzeResponse)
 def analyze_images(
     files: List[UploadFile] = File(...),

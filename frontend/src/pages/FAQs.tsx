@@ -73,6 +73,14 @@ export default function FAQs() {
     {
       question: "How does the app translate into my language?",
       answer: "Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.5 Flash and Google Cloud Translation to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed."
+    },
+    {
+      question: "Can I scan a physical document with my camera?",
+      answer: "Yes. On the Documents page, use the Scan with camera option to photograph one or more pages of a physical document directly from your device camera. You can also upload existing photos from your gallery. Dicta-Notes supports up to 10 images per scan — useful for multi-page contracts, letters, or printed reports. Gemini AI reads the images directly and returns a summary, key points, and action items just like a file upload."
+    },
+    {
+      question: "Can I analyze the content of a meeting transcript?",
+      answer: "Yes. Open any saved session and go to the Transcript tab. Tap the Analyze transcript button to run AI analysis on the meeting text. Gemini 2.5 Flash returns a summary, key points, and action items inline. The result is also saved to your Documents page so you can review it later."
     }
   ];
 
@@ -192,6 +200,20 @@ export default function FAQs() {
                   <AccordionTrigger className="text-lg font-medium">How does the app translate into my language?</AccordionTrigger>
                   <AccordionContent className="text-base text-gray-700 leading-relaxed">
                     Dicta-Notes automatically detects your browser's language preference and uses Google Gemini 2.5 Flash and Google Cloud Translation to translate the entire interface in real-time. The moment you open the app, everything appears in your native language—buttons, labels, instructions, and more—across 130+ supported languages. You can also manually switch languages anytime using the translate button in the header. No configuration needed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-11">
+                  <AccordionTrigger className="text-lg font-medium">Can I scan a physical document with my camera?</AccordionTrigger>
+                  <AccordionContent className="text-base text-gray-700 leading-relaxed">
+                    Yes. On the Documents page, use the <strong>Scan with camera</strong> option to photograph one or more pages of a physical document directly from your device camera. You can also upload existing photos from your gallery. Dicta-Notes supports up to 10 images per scan — useful for multi-page contracts, letters, or printed reports. Gemini AI reads the images directly and returns a summary, key points, and action items just like a file upload.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-12">
+                  <AccordionTrigger className="text-lg font-medium">Can I analyze the content of a meeting transcript?</AccordionTrigger>
+                  <AccordionContent className="text-base text-gray-700 leading-relaxed">
+                    Yes. Open any saved session and go to the <strong>Transcript</strong> tab. Tap the <strong>Analyze transcript</strong> button to run AI analysis on the meeting text. Gemini 2.5 Flash returns a summary, key points, and action items inline. The result is also saved to your Documents page so you can review it later.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

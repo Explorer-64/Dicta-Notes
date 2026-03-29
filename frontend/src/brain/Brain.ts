@@ -1221,6 +1221,20 @@ export class Brain<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
     });
 
   /**
+   * @name document_analysis_analyze_text
+   * @request POST:/routes/document_analysis/analyze-text
+   */
+  document_analysis_analyze_text = (data: { text: string; title?: string }, params: RequestParams = {}) =>
+    this.request<any, any>({
+      path: `/routes/document_analysis/analyze-text`,
+      method: "POST",
+      body: data,
+      type: ContentType.Json,
+      format: "json",
+      ...params,
+    });
+
+  /**
    * @name document_analysis_analyze_images
    * @request POST:/routes/document_analysis/analyze-images
    */
