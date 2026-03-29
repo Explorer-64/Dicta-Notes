@@ -19,6 +19,13 @@ MAX_UPLOAD_BYTES = 20 * 1024 * 1024
 GEMINI_TEXT_MAX = 100_000
 
 ALLOWED_EXT = {".pdf", ".docx", ".txt"}
+IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp"}
+MIME_TYPES = {
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".png": "image/png",
+    ".webp": "image/webp",
+}
 
 
 class AnalyzeResponse(BaseModel):
@@ -166,6 +173,131 @@ Document text:
         "action_items": action_items,
         "language_detected": language,
     }
+
+
+def _analyze_images_with_gemini(images: List[tuple[bytes, str]], source_filename: str) -> Dict[str, Any]:
+    """Analyze one or more document page images via Gemini vision."""
+    from google.genai import types as genai_types
+
+    model = get_gemini_client("gemini-2.5-flash")
+    page_count = len(images)
+    prompt = f"""You are a document analysis assistant. The following {'image is' if page_count == 1 else f'{page_count} images are'} {'a page' if page_count == 1 else 'pages'} of a document photographed by the user.
+
+Extract all visible text from {'the image' if page_count == 1 else 'all images in order'}, then analyze the full content.
+
+Respond with ONLY valid JSON (no markdown, no code fences) matching this exact shape:
+{{
+  "summary": "string, concise overview of the document",
+  "key_points": ["string", "..."],
+  "action_items": ["string", "..."],
+  "title": "string, short descriptive title; if unknown use empty string",
+  "language_detected": "ISO 639-1 language code of the main document language (e.g. en, es)",
+  "extracted_text": "string, all text extracted from the document in reading order"
+}}
+
+Original filename hint: {source_filename}"""
+
+    image_parts = [
+        genai_types.Part.from_bytes(data=img_bytes, mime_type=mime_type)
+        for img_bytes, mime_type in images
+    ]
+    contents = image_parts + [prompt]
+
+    try:
+        response = model.generate_content(contents)
+    except Exception as e:
+        logger.error("Gemini image analysis failed: %s", e)
+        raise HTTPException(status_code=502, detail=f"Image analysis failed: {e!s}") from e
+
+    raw_text = getattr(response, "text", None) or ""
+    if not raw_text.strip():
+        raise HTTPException(status_code=502, detail="Empty response from analysis model")
+
+    try:
+        parsed = _parse_json_object(raw_text)
+    except Exception as e:
+        raise HTTPException(status_code=502, detail="Could not parse analysis result. Please try again.") from e
+
+    title = str(parsed.get("title") or "").strip() or source_filename
+    summary = str(parsed.get("summary") or "").strip()
+    language = str(parsed.get("language_detected") or "und").strip() or "und"
+    key_points = _normalize_str_list(parsed.get("key_points"))
+    action_items = _normalize_str_list(parsed.get("action_items"))
+    extracted_text = str(parsed.get("extracted_text") or "").strip()
+
+    return {
+        "title": title,
+        "summary": summary,
+        "key_points": key_points,
+        "action_items": action_items,
+        "language_detected": language,
+        "full_text": extracted_text,
+    }
+
+
+@router.post("/analyze-images", response_model=AnalyzeResponse)
+def analyze_images(
+    files: List[UploadFile] = File(...),
+    current_user: Dict[str, Any] = Depends(get_current_user),
+):
+    uid = _uid(current_user)
+    if not uid:
+        raise HTTPException(status_code=401, detail="Invalid user")
+    if not files:
+        raise HTTPException(status_code=400, detail="No files provided")
+    if len(files) > 10:
+        raise HTTPException(status_code=400, detail="Maximum 10 pages per analysis")
+
+    images: List[tuple[bytes, str]] = []
+    source_filename = files[0].filename or "photo.jpg"
+
+    for upload in files:
+        fname = upload.filename or ""
+        ext = ("." + fname.rsplit(".", 1)[-1].lower()) if "." in fname else ""
+        if ext not in IMAGE_EXT:
+            raise HTTPException(status_code=400, detail=f"Unsupported file type '{ext}'. Use JPG, PNG, or WEBP images.")
+        data = upload.file.read()
+        if len(data) > MAX_UPLOAD_BYTES:
+            raise HTTPException(status_code=400, detail="One or more files exceed the 20MB limit.")
+        mime = MIME_TYPES.get(ext, "image/jpeg")
+        images.append((data, mime))
+
+    gemini_fields = _analyze_images_with_gemini(images, source_filename)
+
+    db = get_firestore_db()
+    if not db:
+        raise HTTPException(status_code=503, detail="Database unavailable")
+
+    created_at = datetime.now(timezone.utc).isoformat()
+    parent = db.collection("documentAnalysis").document(uid)
+    doc_ref = parent.collection("documents").document()
+    doc_id = doc_ref.id
+
+    page_label = f"{len(images)}-page scan" if len(images) > 1 else "photo scan"
+    payload = {
+        "user_id": uid,
+        "source_filename": f"{source_filename} ({page_label})",
+        "title": gemini_fields["title"],
+        "summary": gemini_fields["summary"],
+        "key_points": gemini_fields["key_points"],
+        "action_items": gemini_fields["action_items"],
+        "full_text": gemini_fields["full_text"],
+        "language_detected": gemini_fields["language_detected"],
+        "created_at": created_at,
+    }
+    doc_ref.set(payload)
+
+    return AnalyzeResponse(
+        id=doc_id,
+        title=payload["title"],
+        summary=payload["summary"],
+        key_points=payload["key_points"],
+        action_items=payload["action_items"],
+        full_text=payload["full_text"],
+        language_detected=payload["language_detected"],
+        source_filename=payload["source_filename"],
+        created_at=created_at,
+    )
 
 
 @router.post("/analyze", response_model=AnalyzeResponse)

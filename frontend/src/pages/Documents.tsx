@@ -9,10 +9,11 @@ import { Progress } from "@/components/ui/progress";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { toast } from "sonner";
 import { format } from "date-fns";
-import { ChevronDown, FileUp, Loader2, Trash2, Upload } from "lucide-react";
+import { Camera, ChevronDown, FileUp, Loader2, Plus, Trash2, Upload, X } from "lucide-react";
 
 const MAX_BYTES = 20 * 1024 * 1024;
 const ACCEPT = ".pdf,.docx,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain";
+const IMAGE_ACCEPT = ".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp";
 
 export type DocumentAnalysisResult = {
   id: string;
@@ -56,6 +57,8 @@ function parseErrorMessage(text: string, fallback: string): string {
 
 export default function Documents() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const cameraRef = useRef<HTMLInputElement>(null);
+  const galleryRef = useRef<HTMLInputElement>(null);
   const [list, setList] = useState<ListItem[]>([]);
   const [loadingList, setLoadingList] = useState(true);
   const [busy, setBusy] = useState(false);
@@ -63,6 +66,8 @@ export default function Documents() {
   const [latest, setLatest] = useState<DocumentAnalysisResult | null>(null);
   const [loadingDoc, setLoadingDoc] = useState<string | null>(null);
   const [dragActive, setDragActive] = useState(false);
+  const [photoQueue, setPhotoQueue] = useState<File[]>([]);
+  const [photoPreviewUrls, setPhotoPreviewUrls] = useState<string[]>([]);
 
   const fetchList = useCallback(async () => {
     setLoadingList(true);
@@ -86,6 +91,57 @@ export default function Documents() {
   useEffect(() => {
     fetchList();
   }, [fetchList]);
+
+  const addPhotos = (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    const newFiles = Array.from(files).filter((f) => f.type.startsWith("image/"));
+    if (newFiles.length === 0) return;
+    setPhotoQueue((q) => {
+      const combined = [...q, ...newFiles].slice(0, 10);
+      const urls = combined.map((f) => URL.createObjectURL(f));
+      setPhotoPreviewUrls((prev) => { prev.forEach((u) => URL.revokeObjectURL(u)); return urls; });
+      return combined;
+    });
+  };
+
+  const removePhoto = (idx: number) => {
+    setPhotoQueue((q) => {
+      const next = q.filter((_, i) => i !== idx);
+      const urls = next.map((f) => URL.createObjectURL(f));
+      setPhotoPreviewUrls((prev) => { prev.forEach((u) => URL.revokeObjectURL(u)); return urls; });
+      return next;
+    });
+  };
+
+  const runImageUpload = async () => {
+    if (photoQueue.length === 0) return;
+    setBusy(true);
+    setProgress(15);
+    setLatest(null);
+    const progressTimer = window.setInterval(() => {
+      setProgress((p) => (p < 85 ? p + 8 : p));
+    }, 400);
+    try {
+      const res = await brain.document_analysis_analyze_images({ files: photoQueue });
+      setProgress(100);
+      if (!res.ok) {
+        const t = await res.text();
+        throw new Error(parseErrorMessage(t, res.statusText));
+      }
+      const data: DocumentAnalysisResult = await res.json();
+      setLatest(data);
+      setPhotoQueue([]);
+      setPhotoPreviewUrls((prev) => { prev.forEach((u) => URL.revokeObjectURL(u)); return []; });
+      toast.success("Document analyzed");
+      await fetchList();
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Analysis failed");
+    } finally {
+      window.clearInterval(progressTimer);
+      setBusy(false);
+      setTimeout(() => setProgress(0), 400);
+    }
+  };
 
   const runUpload = async (file: File) => {
     setBusy(true);
@@ -232,6 +288,64 @@ export default function Documents() {
                 </>
               )}
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Photo / camera section */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <Camera className="h-5 w-5" />
+              Scan with camera
+            </CardTitle>
+            <CardDescription>Take a photo of each page, then analyze all at once — up to 10 pages</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <input ref={cameraRef} type="file" accept={IMAGE_ACCEPT} capture="environment" className="hidden" disabled={busy} onChange={(e) => addPhotos(e.target.files)} />
+            <input ref={galleryRef} type="file" accept={IMAGE_ACCEPT} multiple className="hidden" disabled={busy} onChange={(e) => addPhotos(e.target.files)} />
+
+            <div className="flex flex-wrap gap-2">
+              <Button type="button" variant="outline" disabled={busy || photoQueue.length >= 10} onClick={() => cameraRef.current?.click()}>
+                <Camera className="h-4 w-4 mr-2" /> Take photo
+              </Button>
+              <Button type="button" variant="outline" disabled={busy || photoQueue.length >= 10} onClick={() => galleryRef.current?.click()}>
+                <Plus className="h-4 w-4 mr-2" /> Add from gallery
+              </Button>
+            </div>
+
+            {photoQueue.length > 0 && (
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
+                  {photoPreviewUrls.map((url, idx) => (
+                    <div key={idx} className="relative">
+                      <img src={url} alt={`Page ${idx + 1}`} className="h-24 w-20 object-cover rounded border" />
+                      <span className="absolute top-0 left-0 bg-black/60 text-white text-xs px-1 rounded-br">{idx + 1}</span>
+                      <button
+                        type="button"
+                        onClick={() => removePhoto(idx)}
+                        className="absolute -top-1 -right-1 bg-destructive text-destructive-foreground rounded-full p-0.5"
+                        aria-label="Remove page"
+                      >
+                        <X className="h-3 w-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+
+                {busy ? (
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Loader2 className="h-4 w-4 animate-spin" /> Analyzing {photoQueue.length} page{photoQueue.length > 1 ? "s" : ""}…
+                    </div>
+                    <Progress value={progress} className="h-2" />
+                  </div>
+                ) : (
+                  <Button type="button" onClick={runImageUpload}>
+                    Analyze {photoQueue.length} page{photoQueue.length > 1 ? "s" : ""}
+                  </Button>
+                )}
+              </div>
+            )}
           </CardContent>
         </Card>
 

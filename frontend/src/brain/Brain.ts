@@ -1221,6 +1221,21 @@ export class Brain<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
     });
 
   /**
+   * @name document_analysis_analyze_images
+   * @request POST:/routes/document_analysis/analyze-images
+   */
+  document_analysis_analyze_images = (data: { files: File[] }, params: RequestParams = {}) => {
+    const formData = new FormData();
+    data.files.forEach((f) => formData.append("files", f));
+    return this.request<any, any>({
+      path: `/routes/document_analysis/analyze-images`,
+      method: "POST",
+      body: formData,
+      ...params,
+    });
+  };
+
+  /**
    * @name document_analysis_get
    * @request GET:/routes/document_analysis/{doc_id}
    */
