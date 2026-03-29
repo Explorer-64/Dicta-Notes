@@ -31,6 +31,7 @@ const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const CookieSettings = lazy(() => import("./pages/CookieSettings.tsx"));
 const DebugMode = lazy(() => import("./pages/DebugMode.tsx"));
 const DocumentsGuide = lazy(() => import("./pages/DocumentsGuide.tsx"));
+const Documents = lazy(() => import("./pages/Documents.tsx"));
 const Education = lazy(() => import("./pages/Education.tsx"));
 const FAQs = lazy(() => import("./pages/FAQs.tsx"));
 const Features = lazy(() => import("./pages/Features.tsx"));
@@ -160,6 +161,7 @@ export const userRoutes: RouteObject[] = [
 	{ path: "/debugmode", element: <UserGuard><DebugMode /></UserGuard>},
 	{ path: "/documents-guide", element: <DocumentsGuide />},
 	{ path: "/documentsguide", element: <DocumentsGuide />},
+	{ path: "/documents", element: <UserGuard><Documents /></UserGuard>},
 	{ path: "/education", element: <Education />},
 	{ path: "/faq", element: <FAQs />},
 	{ path: "/fa-qs", element: <FAQs />},

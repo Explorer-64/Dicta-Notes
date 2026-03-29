@@ -11,3 +11,6 @@ export function NoIndexMeta() {
     </Helmet>
   );
 }
+
+/** Alias for protected pages (same as NoIndexMeta). */
+export const NoIndex = NoIndexMeta;

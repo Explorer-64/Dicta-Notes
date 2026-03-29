@@ -1193,4 +1193,42 @@ export class Brain<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
       format: "json",
       ...params,
     });
+
+  /**
+   * @name document_analysis_analyze
+   * @request POST:/routes/document_analysis/analyze
+   */
+  document_analysis_analyze = (data: { file: File | Blob }, params: RequestParams = {}) =>
+    this.request<any, any>({
+      path: `/routes/document_analysis/analyze`,
+      method: "POST",
+      body: { file: data.file },
+      type: ContentType.FormData,
+      format: "json",
+      ...params,
+    });
+
+  /**
+   * @name document_analysis_list
+   * @request GET:/routes/document_analysis/list
+   */
+  document_analysis_list = (params: RequestParams = {}) =>
+    this.request<any, any>({
+      path: `/routes/document_analysis/list`,
+      method: "GET",
+      format: "json",
+      ...params,
+    });
+
+  /**
+   * @name document_analysis_delete
+   * @request DELETE:/routes/document_analysis/{doc_id}
+   */
+  document_analysis_delete = (doc_id: string, params: RequestParams = {}) =>
+    this.request<any, any>({
+      path: `/routes/document_analysis/${encodeURIComponent(doc_id)}`,
+      method: "DELETE",
+      format: "json",
+      ...params,
+    });
 }

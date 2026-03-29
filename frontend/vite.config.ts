@@ -1,17 +1,12 @@
 import react from "@vitejs/plugin-react";
 import "dotenv/config";
-import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig, splitVendorChunkPlugin } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 import tsConfigPaths from "vite-tsconfig-paths";
-import { PRERENDER_ROUTES } from "./prerender-routes";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const require = createRequire(import.meta.url);
-const vitePrerender = require("vite-plugin-prerender");
-const PuppeteerRenderer = vitePrerender.PuppeteerRenderer;
 
 type Extension = {
 	name: string;
@@ -114,33 +109,6 @@ export default defineConfig({
 		splitVendorChunkPlugin(),
 		tsConfigPaths(),
 		injectHTML(),
-		vitePrerender({
-			staticDir: path.join(__dirname, "dist"),
-			routes: PRERENDER_ROUTES,
-			server: {
-				// Omit port: @prerenderer/prerenderer uses portfinder when unset (avoids EADDRINUSE on fixed ports).
-				proxy: {
-					"/routes": {
-						target: "http://127.0.0.1:8000",
-						changeOrigin: true,
-					},
-				},
-			},
-			renderer: new PuppeteerRenderer({
-				headless: true,
-				args: ["--no-sandbox", "--disable-setuid-sandbox"],
-				maxConcurrentRoutes: 2,
-				renderAfterTime: 2000,
-				navigationOptions: {
-					waitUntil: "networkidle0",
-					timeout: 30_000,
-				},
-			}),
-			postProcess(renderedRoute: { route: string; originalRoute: string }) {
-				renderedRoute.route = renderedRoute.originalRoute;
-				return renderedRoute;
-			},
-		}),
 	],
 	server: {
 		port: 3000, // Start from port 3000, will auto-increment if unavailable

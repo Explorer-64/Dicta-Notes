@@ -63,8 +63,8 @@ export default function FAQs() {
       answer: "For online meetings (Zoom/Teams/Meet), choose System/Tab Audio and ensure 'Share audio' is enabled. For in-person meetings, use a microphone near the speakers and reduce background noise."
     },
     {
-      question: "What is a Progressive Web App (PWA) and why should I install it?",
-      answer: "Installing the Dicta-Notes PWA gives you an app-like experience on desktop or mobile, faster loading, and enhanced offline support. See the Install page for instructions."
+      question: "Do I need to download an app?",
+      answer: "No app store required. Install Dicta-Notes directly from your browser in seconds — it works like a native app on any phone, tablet, or desktop. Once installed, it records offline and syncs when you're back online."
     },
     {
       question: "How do I delete my account?",
