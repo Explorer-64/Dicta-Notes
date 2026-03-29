@@ -61,6 +61,7 @@ export default function Documents() {
   const [busy, setBusy] = useState(false);
   const [progress, setProgress] = useState(0);
   const [latest, setLatest] = useState<DocumentAnalysisResult | null>(null);
+  const [loadingDoc, setLoadingDoc] = useState<string | null>(null);
   const [dragActive, setDragActive] = useState(false);
 
   const fetchList = useCallback(async () => {
@@ -141,6 +142,24 @@ export default function Documents() {
       await fetchList();
     } catch (e: unknown) {
       toast.error(e instanceof Error ? e.message : "Delete failed");
+    }
+  };
+
+  const loadDocument = async (docId: string) => {
+    setLoadingDoc(docId);
+    try {
+      const res = await brain.document_analysis_get(docId);
+      if (!res.ok) {
+        const t = await res.text();
+        throw new Error(parseErrorMessage(t, res.statusText));
+      }
+      const data: DocumentAnalysisResult = await res.json();
+      setLatest(data);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Could not load document");
+    } finally {
+      setLoadingDoc(null);
     }
   };
 
@@ -288,7 +307,10 @@ export default function Documents() {
           <ul className="space-y-3">
             {list.map((doc) => (
               <li key={doc.id}>
-                <Card>
+                <Card
+                  className="cursor-pointer hover:border-primary/50 transition-colors"
+                  onClick={() => loadDocument(doc.id)}
+                >
                   <CardContent className="pt-4 pb-4">
                     <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                       <div className="min-w-0 space-y-1">
@@ -301,16 +323,18 @@ export default function Documents() {
                         </div>
                         <p className="text-sm text-muted-foreground line-clamp-2 mt-2">{doc.summary}</p>
                       </div>
-                      <Button
-                        type="button"
-                        variant="destructive"
-                        size="sm"
-                        className="shrink-0"
-                        onClick={() => onDelete(doc.id)}
-                      >
-                        <Trash2 className="h-4 w-4 mr-1" />
-                        Delete
-                      </Button>
+                      <div className="flex items-center gap-2 shrink-0">
+                        {loadingDoc === doc.id && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
+                        <Button
+                          type="button"
+                          variant="destructive"
+                          size="sm"
+                          onClick={(e) => { e.stopPropagation(); onDelete(doc.id); }}
+                        >
+                          <Trash2 className="h-4 w-4 mr-1" />
+                          Delete
+                        </Button>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>

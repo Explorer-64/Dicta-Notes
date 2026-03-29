@@ -1221,6 +1221,18 @@ export class Brain<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
     });
 
   /**
+   * @name document_analysis_get
+   * @request GET:/routes/document_analysis/{doc_id}
+   */
+  document_analysis_get = (doc_id: string, params: RequestParams = {}) =>
+    this.request<any, any>({
+      path: `/routes/document_analysis/${encodeURIComponent(doc_id)}`,
+      method: "GET",
+      format: "json",
+      ...params,
+    });
+
+  /**
    * @name document_analysis_delete
    * @request DELETE:/routes/document_analysis/{doc_id}
    */

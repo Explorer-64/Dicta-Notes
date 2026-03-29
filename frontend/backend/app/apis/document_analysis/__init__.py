@@ -277,6 +277,49 @@ def list_analyses(current_user: Dict[str, Any] = Depends(get_current_user)):
     return DocumentListResponse(documents=items)
 
 
+@router.get("/{doc_id}", response_model=AnalyzeResponse)
+def get_analysis(
+    doc_id: str,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+):
+    uid = _uid(current_user)
+    if not uid:
+        raise HTTPException(status_code=401, detail="Invalid user")
+
+    if not doc_id or doc_id.strip() != doc_id or len(doc_id) > 256:
+        raise HTTPException(status_code=400, detail="Invalid document id")
+
+    db = get_firestore_db()
+    if not db:
+        raise HTTPException(status_code=503, detail="Database unavailable")
+
+    doc_ref = db.collection("documentAnalysis").document(uid).collection("documents").document(doc_id)
+    snap = doc_ref.get()
+    if not snap.exists:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    d = snap.to_dict() or {}
+    created = d.get("created_at")
+    if created is not None and hasattr(created, "isoformat"):
+        created_str = created.isoformat()
+    elif created is not None and hasattr(created, "timestamp"):
+        created_str = datetime.fromtimestamp(created.timestamp(), tz=timezone.utc).isoformat()
+    else:
+        created_str = str(created or "")
+
+    return AnalyzeResponse(
+        id=doc_id,
+        title=str(d.get("title") or d.get("source_filename") or "Untitled"),
+        summary=str(d.get("summary") or ""),
+        key_points=_normalize_str_list(d.get("key_points")),
+        action_items=_normalize_str_list(d.get("action_items")),
+        full_text=str(d.get("full_text") or ""),
+        language_detected=str(d.get("language_detected") or ""),
+        source_filename=str(d.get("source_filename") or ""),
+        created_at=created_str,
+    )
+
+
 @router.delete("/{doc_id}")
 def delete_analysis(
     doc_id: str,
